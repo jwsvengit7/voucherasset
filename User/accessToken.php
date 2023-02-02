@@ -1,0 +1,59 @@
+<?php
+
+if ($_GET['ok']==$_SESSION['ok']) {    
+
+    $loopQuery=$conn->query("SELECT * FROM signup WHERE email='".$_SESSION['email']."'");
+    if ($loopQuery->num_rows>0) {
+        $loopAll=$loopQuery->fetch_assoc();
+        $username=$loopAll['username'];
+        $firstname=$loopAll['firstname'];
+        $email=$loopAll['email'];
+        $password=$loopAll['password'];
+        $dob=$loopAll['dob'];
+        $access_token=$loopAll['access_token'];
+        $myownreferrid=$loopAll['myownreferrid'];
+        $referrerid=$loopAll['referrerid'];
+        $profile=$loopAll['profile'];
+        $bgcolor=$loopAll['color'];
+        if($bgcolor!="white"){
+            $bgcolorText="#ccc";
+            $bgcolor="#0c151a";
+            $boxcolor="rgb(21, 32, 43)";
+            $boxcolorwhite="rgb(21, 32, 43)";
+            $co="white";
+
+
+        }else{
+            $bgcolorText="#003366";
+            $boxcolorwhite="white";
+
+            $bgcolor="#fff";
+            $boxcolor="#f8f8f8";
+            $co="black";
+
+
+        }
+
+        $select_amount=$conn->query("SELECT * FROM deposit WHERE access_token='$access_token'");
+        if($select_amount->num_rows>0){
+            $record=fetch_array($select_amount);
+            $amount=number_format($record['amount']).'.00';        
+        }else{
+            $amount=number_format(0).'.00';
+        }
+
+        $active_forum=$conn->query("SELECT * FROM `voucher_market` ");
+        $my=$active_forum->fetch_array();
+        $forum1=$my['trade_forum_1'];
+        $forum2=$my['trade_forum_2'];
+        $forum3=$my['trade_forum_3'];
+    }else{
+            echo '<script>window.location.href="../register/"</script>';
+    }
+
+} else {
+    die('Error 404 Handling');
+}
+
+
+?>

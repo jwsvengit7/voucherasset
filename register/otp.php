@@ -10,18 +10,18 @@ if (isset($_SESSION['ok'])==1) {
 <html  dir="ltr" lang="en" xml:lang="en">
 <head>
     <title>Login - Voucher Asset</title>
-    <link rel="shortcut icon" href="" />
+    <link rel="shortcut icon" href="logo.png" />
     
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Jost" rel="stylesheet">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="moodle, Ignite" />
-<link rel="stylesheet" type="text/css" href="../theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css"></script>
 <link rel="stylesheet" type="text/css" href="../theme/styles.php/ignite/1663148226_1/all.css" />
 <link rel="stylesheet" type="text/css" href="../theme/ignite/assets/social-icons.css" />
 <link rel="stylesheet" type="text/css" href="../theme/ignite/assets/foronlydemo.css" />
 <link rel="stylesheet" href="../css/all.css" />
 <link rel="stylesheet" href="../css/mystyle.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/all.css">
 
@@ -32,19 +32,20 @@ if (isset($_SESSION['ok'])==1) {
 	
     <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
 </div><script src="../lib/javascript.php/1662375728/lib/mdn-polyfills/polyfill.js"></script>
-<script src="../theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="../theme/jquery.php/core/jquery-3.2.1.min.js"></script>
-<script src="../lib/javascript.php/1662375728/lib/javascript-static.js"></script>
+<script src="../theme/jquery.php/core/jquery-3.2.1.min.js"></script>
 <script src="../theme/javascript.php/ignite/1663148226/head.js"></script>
 <script src="js/login.js"></script>
-<script>
-//<![CDATA[
-document.body.className += ' jsenabled';
-//]]>
-</script>
 
 
+<div id="app">
+
+<div class="preloaders">
+    <img src="../images/preloader-white.png" class="logpreloader"/>
+
+            </div>
 
     <div class="container-fluid p0" style="display:block;">
+  
         <!--
             ===Navigation Section //Start
                                         -->
@@ -113,11 +114,17 @@ document.body.className += ' jsenabled';
 	 	width:258px;
 	 	height:65px;
  	}
+    @media(max-width:600px){
+        .ro{
+     width: 80px !important;
+        height:80px;
+    }
+    }
 </style>
 
  <div class="site-logo logprops">
 	<a href="../index.html" title="Ignite">
-		<img src="../images/corelogo.png"   alt="Ignite">
+		<img src="logo.png" width="80" height="80" alt="Ignite" class="ro">
 	</a>
 </div>
                     <ul class="mobile_menu__container">
@@ -136,10 +143,10 @@ document.body.className += ' jsenabled';
                     </ul>
                     <ul class="navigation-main-wrapper">
                         <li class="home">
-                            <a class="tst active" href="https://ignite.themecms.com?redirect=0">Home</a>
+                            <a class="tst active" href="../index.html">Home</a>
                         </li>
                         <!-- custom_menu -->
-                        <ul class="navigation-wrapper"><li class="nav-dropdown-menu"><a href="https://ignite.themecms.com/courses" class=" tst" role="menuitem" data-toggle="dropdown-item">Voucher</a><li><a href="https://ignite.themecms.com/" class="dropdown-item tst">News</a></li><li><a href="https://ignite.themecms.com/" class="dropdown-item tst">Trade</a></li><li><a href="https://ignite.themecms.com/" class="dropdown-item tst">Register</a></li><li class="nav-dropdown-menu langmenu-item"><a href="" class="dropdown-item tst" role="menuitem" data-toggle="dropdown-item" title="Language"><span class="lang-flag en" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/EN');"></span><span class="sname">en</span><span class="fname">English ‎(en)‎</span></a><ul class="dropdown-list-item"><li><a href="https://ignite.themecms.com/?lang=de" class="dropdown-item tst" title="Deutsch ‎(de)‎"><span class="lang-flag de" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/DE');"></span><span class="sname">de</span><span class="fname">Deutsch ‎(de)‎</span></a></li><li><a href="https://ignite.themecms.com/?lang=en" class="dropdown-item tst" title="English ‎(en)‎"></a></li><li><a href="https://ignite.themecms.com/?lang=es" class="dropdown-item tst" title="Español - Internacional ‎(es)‎"><span class="lang-flag es" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/ES');"></span><span class="sname">es</span><span class="fname">Español - Internacional ‎(es)‎</span></a></li><li><a href="https://ignite.themecms.com/?lang=la" class="dropdown-item tst" title="Latin ‎(la)‎"><span class="lang-flag la" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/LA');"></span><span class="sname">la</span><span class="fname">Latin ‎(la)‎</span></a></li><li><a href="https://ignite.themecms.com/?lang=ro" class="dropdown-item tst" title="Română ‎(ro)‎"><span class="lang-flag ro" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/RO');"></span><span class="sname">ro</span><span class="fname">Română ‎(ro)‎</span></a></li><li><a href="https://ignite.themecms.com/?lang=ur" class="dropdown-item tst" title="اردو ‎(ur)‎"><span class="lang-flag ur" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/noflag');"></span><span class="sname">ur</span><span class="fname">اردو ‎(ur)‎</span></a></li></ul></ul>
+                        <ul class="navigation-wrapper"><li class="nav-dropdown-menu"><a href="?courses" class=" tst" role="menuitem" data-toggle="dropdown-item">Voucher</a><li><a href="" class="dropdown-item tst">News</a></li><li><a href="" class="dropdown-item tst">Trade</a></li><li><a href="" class="dropdown-item tst">Register</a></li><li class="nav-dropdown-menu langmenu-item"><a href="" class="dropdown-item tst" role="menuitem" data-toggle="dropdown-item" title="Language"><span class="lang-flag en" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/EN');"></span><span class="sname">en</span><span class="fname">English ‎(en)‎</span></a><ul class="dropdown-list-item"><li><a href="https://ignite.themecms.com/?lang=de" class="dropdown-item tst" title="Deutsch ‎(de)‎"><span class="lang-flag de" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/DE');"></span><span class="sname">de</span><span class="fname">Deutsch ‎(de)‎</span></a></li><li><a href="https://ignite.themecms.com/?lang=en" class="dropdown-item tst" title="English ‎(en)‎"></a></li><li><a href="https://ignite.themecms.com/?lang=es" class="dropdown-item tst" title="Español - Internacional ‎(es)‎"><span class="lang-flag es" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/ES');"></span><span class="sname">es</span><span class="fname">Español - Internacional ‎(es)‎</span></a></li><li><a href="https://ignite.themecms.com/?lang=la" class="dropdown-item tst" title="Latin ‎(la)‎"><span class="lang-flag la" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/LA');"></span><span class="sname">la</span><span class="fname">Latin ‎(la)‎</span></a></li><li><a href="https://ignite.themecms.com/?lang=ro" class="dropdown-item tst" title="Română ‎(ro)‎"><span class="lang-flag ro" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/RO');"></span><span class="sname">ro</span><span class="fname">Română ‎(ro)‎</span></a></li><li><a href="https://ignite.themecms.com/?lang=ur" class="dropdown-item tst" title="اردو ‎(ur)‎"><span class="lang-flag ur" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/noflag');"></span><span class="sname">ur</span><span class="fname">اردو ‎(ur)‎</span></a></li></ul></ul>
                         <!-- page_heading_menu -->
                         
                         
@@ -203,128 +210,11 @@ include "csslogin.php";
 
     
 
-    <footer id="page-footer" class="mTopDiv">
-        <div class="container">
-            <div class="default_footer__section hidden">
-                <div id="course-footer"></div>
-    
-    
-                <div class="logininfo">You are not logged in. (<a href="https://ignite.themecms.com/login/index.php">Log in</a>)</div>
-                <div class="tool_usertours-resettourcontainer"></div>
-                <div class="sitelink"><a title="Moodle" href="http://moodle.org/"><img src="https://ignite.themecms.com/theme/image.php/ignite/core/1663148226/moodlelogo_grayhat" alt="Moodle logo" /></a></div>
-                <nav class="nav navbar-nav d-md-none" aria-label="Custom menu">
-                        <ul class="list-unstyled pt-3">
-                                            <li><a href="https://ignite.themecms.com/courses" title="">Courses</a></li>
-                                        <li>
-                                            <ul class="list-unstyled ml-3">
-                 <li><a href="?categoryid=1" title="">Architecture</a></li>
-                                                            <li>
-                                                                <ul class="list-unstyled ml-3">
-                 <li><a href="?id=3" title="">Conservation of Heritage Sites</a></li>
-                   <li><a href="?id=2" title="">Landscape Architecture</a></li>
-                                                                </ul>
-                                                            </li>
-             <li><a href="?id=2" title="">Economics</a></li>
-                                                            <li>
-        <ul class="list-unstyled ml-3">
-                         <li><a href="?id=4" title="">Introduction to Economics</a></li>
-                                                                </ul>
-                                                            </li>
-               <li><a href="?categoryid=3" title="">Motivation</a></li>
-                 <li>
-                    <ul class="list-unstyled ml-3">
-                         <li><a href="https://ignite.themecms.com/course/view.php?id=6" title="">Motivating Students to Learn</a></li>
-                             <li><a href="https://ignite.themecms.com/course/view.php?id=5" title="">Employee Engagement</a></li>
-                                                                </ul>
-                                                            </li>
-                                            </ul>
-                                        </li>
-                                            <li><a href="https://ignite.themecms.com/" title="">Alumni and giving</a></li>
-                                            <li><a href="https://ignite.themecms.com/" title="">Ignite students</a></li>
-                                            <li><a href="https://ignite.themecms.com/" title="">News</a></li>
-                                            <li><a href="https://ignite.themecms.com/" title="">Jobs</a></li>
-                                            <li><a href="https://ignite.themecms.com/" title="">Research</a></li>
-                                            <li><a href="#" title="Language">English ‎(en)‎</a></li>
-                                        <li>
-                                            <ul class="list-unstyled ml-3">
-                                                                <li><a href="https://ignite.themecms.com/?lang=de" title="Deutsch ‎(de)‎">Deutsch ‎(de)‎</a></li>
-                                                                <li><a href="https://ignite.themecms.com/?lang=en" title="English ‎(en)‎">English ‎(en)‎</a></li>
-                                                                <li><a href="https://ignite.themecms.com/?lang=es" title="Español - Internacional ‎(es)‎">Español - Internacional ‎(es)‎</a></li>
-                                                                <li><a href="https://ignite.themecms.com/?lang=la" title="Latin ‎(la)‎">Latin ‎(la)‎</a></li>
-                                                                <li><a href="https://ignite.themecms.com/?lang=ro" title="Română ‎(ro)‎">Română ‎(ro)‎</a></li>
-                                                                <li><a href="https://ignite.themecms.com/?lang=ur" title="اردو ‎(ur)‎">اردو ‎(ur)‎</a></li>
-                                            </ul>
-                                        </li>
-                        </ul>
-                </nav>
-            </div>
-    
-            <div class="custom_footer__section">
-                <ul class="c_footer__wrap f__item">
-                    <li>
-                        <div class="footer_content__wrapper">
-                                <img src="https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/footerlogo" title="Footer_Logo"/>
-                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                            <ul>
-                                    <li><i class="cb-f__mail-icon f__icon" aria-hidden="true"></i><a href="mailto:cmsbrand93@gmail.com">cmsbrand93@gmail.com</a></li>
-                                    <li><i class="cb-f__phone-icon f__icon" aria-hidden="true"></i>+00 123-456-789</li>
-                                    <li><i class="cb-f__navigator-icon f__icon" aria-hidden="true"></i>123 6th St.Melbourne, FL 32904</li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="footer_section__wrap_1 f__item">
-                        <h4>Navigate</h4>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Schedule</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Blog</a></li>
-                        <li><a href="#">Study Guides</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Services</a></li>
-                </ul>
-                <ul class="footer_section__wrap_2 f__item">
-                        <h4>Popular Courses</h4>
-                        <li><a href="#">UI/UX Design</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Business Strategy</a></li>
-                        <li><a href="#">Software Development</a></li>
-                        <li><a href="#">Business English</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Features</a></li>
-                </ul>
-                <ul class="footer_section__wrap_3 f__item">
-                        <h4>Support</h4>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Forums</a></li>
-                        <li><a href="#">Language Packs</a></li>
-                        <li><a href="#">Fully Responsive</a></li>
-                        <li><a href="#">Custom Category</a></li>
-                        <li><a href="#">Social Media</a></li>
-                        <li><a href="#">Easy Settings</a></li>
-                </ul>
-            </div>
-                    
-            <div class="tool_dataprivacy"><a href="https://ignite.themecms.com/admin/tool/dataprivacy/summary.php">Data retention summary</a></div>
-           
-<script src="../lib/javascript.php/1662375728/lib/requirejs/require.min.js"></script>
-
-
-        </div>
-    </footer>
-    <div class="footer_signature__wrap">
-        <div class="container">
-            <div class="col-md-12">
-                <div class="footer_signature__content">
-                        <p>&copy; Copyright 2022| Ignite Theme by CmsBrand | All Rights Reserved | Powered by Moodle</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--@@Strip Section //Start-->
-        <div class="side_strip__section">
-               
-        </div>
+ <?php
+include "footer.php";
+ ?>
+  
+  
     <!--@@Strip Section //End-->
     <!-- Start Back To Top -->
         <div id="back_to__top" style="display: none;"> 

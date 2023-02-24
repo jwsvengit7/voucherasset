@@ -4,7 +4,7 @@
     <div class="row-1 display">
         <div class="box-home">
 
-            <div class="box">
+            <div class="box fullcolor">
                 <div class="row-gap" >
                 <span class="color-site font-w-none">
                         Sales
@@ -104,7 +104,7 @@ transform: rotate(140deg);
             </div>
             </div>
             </div>
-            <div class="box">
+            <div class="box fullcolor">
                 <div class="row-gap" >
                 <span class="color-site font-w-none">
                         Sales
@@ -131,7 +131,7 @@ transform: rotate(140deg);
 
 
             </div>
-            <div class="box">
+            <div class="box fullcolor">
                 <div class="row-gap" >
                 <span class="color-site font-w-none">
                         Sales
@@ -158,7 +158,7 @@ transform: rotate(140deg);
                   </div>
 
             </div>
-            <div class="box">
+            <div class="box fullcolor">
                 <div class="row-gap" >
                     <span class="color-site font-w-none">
                         Sales
@@ -312,7 +312,7 @@ $("#rows").append(`
 <div style="width:98%;height:auto;padding: 10px;">
 
 <div class="row-col-table wi-100 display wrap justify-space-between">
-<div class="boxAgent display align-items"> 
+<div class="boxAgent fullcolor display align-items"> 
         <div class="wi-100 display justify-space-between align-items">
             <i class="fa fa-list color-site f25"></i>
             <div class="wi-30 display flex-direction justify-content align-end">
@@ -321,7 +321,7 @@ $("#rows").append(`
             </div>
         </div>
     </div>
-    <div class="boxAgent display align-items"> 
+    <div class="boxAgent fullcolor display align-items"> 
         <div class="wi-100 display justify-space-between align-items">
             <i class="fa fa-check color-site f25"></i>
             <div class="wi-30 display flex-direction justify-content align-end">
@@ -330,7 +330,7 @@ $("#rows").append(`
             </div>
         </div>
     </div>
-    <div class="boxAgent display align-items"> 
+    <div class="boxAgent fullcolor display align-items"> 
         <div class="wi-100 display justify-space-between align-items">
             <i class="fa fa-line-chart color-site f25"></i>
             <div class="wi-30 display flex-direction justify-content align-end">
@@ -339,7 +339,7 @@ $("#rows").append(`
             </div>
         </div>
     </div>
-    <div class="boxAgent display align-items"> 
+    <div class="boxAgent fullcolor display align-items"> 
         <div class="wi-100 display justify-space-between align-items">
             <i class="fa fa-signal color-site f25"></i>
             <div class="wi-30 display flex-direction justify-content align-end">
@@ -348,7 +348,7 @@ $("#rows").append(`
             </div>
         </div>
     </div>
-    <div class="boxAgent display align-items"> 
+    <div class="boxAgent fullcolor display align-items"> 
         <div class="wi-100 display justify-space-between align-items">
             <i class="fa fa-bar-chart color-site f25"></i>
             <div class="wi-30 display flex-direction justify-content align-end">
@@ -357,7 +357,7 @@ $("#rows").append(`
             </div>
         </div>
     </div>
-    <div class="boxAgent display align-items"> 
+    <div class="boxAgent fullcolor display align-items"> 
         <div class="wi-100 display justify-space-between align-items">
             <i class="fa fa-pie-chart color-site f25"></i>
             <div class="wi-30 display flex-direction justify-content align-end">
@@ -366,7 +366,7 @@ $("#rows").append(`
             </div>
         </div>
     </div>
-    <div class="boxAgent display align-items"> 
+    <div class="boxAgent fullcolor display align-items"> 
         <div class="wi-100 display justify-space-between align-items">
             <i class="fa fa-hourglass-half color-site f25"></i>
             <div class="wi-30 display flex-direction justify-content align-end">
@@ -375,7 +375,7 @@ $("#rows").append(`
             </div>
         </div>
     </div>
-    <div class="boxAgent display align-items"> 
+    <div class="boxAgent fullcolor display align-items"> 
         <div class="wi-100 display justify-space-between align-items">
             <i class="fa fa-star red f25"></i>
             <div class="wi-30 display flex-direction justify-content align-end" >
@@ -396,7 +396,7 @@ templeate open lines
 
  -->
 
-            <div id="voucher" class="voucher_market">
+            <div id="voucher" class="voucher_market fullcolor">
                 <div class="wi-100 row-voucher">
                 <div class="row-item-api flex-direction">
                     <div class="wi-100">
@@ -480,9 +480,109 @@ templeate open lines
  <!-- 
     close lines
   -->
-            <div class="payemt-system" id="payment">
+  <div class="voucher_market fullcolor" id="payment">
+  <div class="wi-100 row-voucher">
+                <div class="row-item-api flex-direction">
+                    <div class="wi-100">
+                        <label>
+                            <h3>&nbsp;&nbsp;&nbsp;Active Payment</h3>
+                        </label>
+                        <div style="width:100%;height:600px;overflow:scroll">
+                        <div class="rowPic">
+  <div class="col-75">
+    <div class="container">
+      <form  method="post" action="pages/paySubscription.php" id="subscribe-payment" enctype="multipart/form-data">
 
+        <div class="rowPic">
+          <div class="col-50">
+            <h3 class="darkblue">Billing Address</h3>
+            <label for="fname" class="darkblue"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="username" class="darkblue" value="<?php echo $username;?>" readonly>
+            <label for="email" class="darkblue"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" class="darkblue" name="email" value="<?php echo $email;?>" readonly>
+            <label for="adr" class="darkblue"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" class="darkblue" id="adr" name="address" value="542 W. 15th Street" readonly>
+            <input type="hidden" name="id" class="darkblue" value="<?php echo $access_token;?>">
+            
+          </div>
+
+          <div class="col-50">
+            <h3 class="darkblue">Payment</h3>
+            <label for="fname" class="darkblue">Bank Details</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
+            <label class="darkblue" for="accountname">Account Name</label>
+            <input type="text" id="accountname" class="darkblue" name="accountname" placeholder="Voucher Asset">
+            <label class="darkblue" for="accountnumber">Account number</label>
+            <input type="text" id="accountnumber" class="darkblue" name="accountnumber" placeholder="154567444">
+            <label class="darkblue" for="bank">Bank</label>
+            <input type="text" id="bank" name="bank" placeholder="GT Bank" class="darkblue">
+            <label class="darkblue" for="frum">Choose Trade Forum To subscribe</label>
+            <select class="option-trade" class="darkblue">
+            <option value="200"><strike>N</strike>200 trade Forum</option>
+            <option value="500"><strike>N</strike>500 trade Forum</option>
+            <option value="1000"><strike>N</strike>1000 trade Forum</option>
+            <option value="2000"><strike>N</strike>2000 trade Forum</option>
+            </select>
+            <label for="uploadfile" class="fileUplaod " >Upload Proof Here</label>
+            <input type="file" hidden name="file" id="uploadfile" >
+            <div class="image-preview-container">
+            <img id="preview-selected-image" />
+            </div>
+        
+           
+          </div>
+
+        </div>
+        <label class="darkblue">
+          <input type="checkbox" checked="checked" name="sameadr">Checkout if Paid
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+
+</div>
+
+
+
+                         </div>
+                </div>
+                </div>
+                </div>
+
+</div>
+<style>
+</style>
+
+<div class="voucher_market fullcolor" id="voucherId">
+<div class="wi-100 row-voucher">
+                <div class="row-item-api flex-direction">
+                    <div class="wi-100">
+                        <label>
+                            <h3>&nbsp;&nbsp;&nbsp;Trade Forum</h3>
+                        </label>
+                </div>
+    </div>
+    </div>
+
+</div>
+<div class="voucher_market fullcolor" id="initial">
+<div class="wi-100 row-voucher">
+                <div class="row-item-api flex-direction">
+                    <div class="wi-100">
+                        <label>
+                            <h3>&nbsp;&nbsp;&nbsp;Initiate a Trade</h3>
+                        </label>
+                </div>
+    </div>
+    </div>
+
+</div>
 
 </div>
 <footer>

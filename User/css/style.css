@@ -10,6 +10,27 @@ h1,h2,h3,h4,h5,p,span{
     font-family: sans-serif !important;
 
 }
+.row-loader{
+    width:100%;
+    height:4px;
+    background-color: orange;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    animation-name: wi;
+    animation-duration: 4s;
+    display: none;
+}
+@keyframes wi {
+    from{
+        width: 0%;
+
+    }
+    to{
+width: 100%;
+    }
+}
 .header{
     width:100%;
     height:100px;
@@ -153,7 +174,7 @@ aside ul{
     justify-content: center;
     align-items: center;
 }
-#show-hide{
+.show-hide{
     display: none;
 }
 
@@ -209,6 +230,9 @@ aside ul{
     padding-left: 40px;
     padding-right: 30px;
 }
+.real-darkblues{
+    color: #003366;
+}
 .row-tabs{
     height:250px;
     border-radius:10px;
@@ -231,7 +255,7 @@ aside ul{
     width:100%;height: 300px;
 }
 .main-right{
-    width:23%;height:100%;background:white;
+    width:23%;height:100%;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -275,7 +299,7 @@ aside ul{
     padding: 10px;
 }
 
-.voucher_market{
+.voucher_market,.payemt-system{
     width:98%;
     height: 100vh;
     position: fixed;
@@ -284,10 +308,9 @@ aside ul{
     z-index: 1000;
     padding: 10px;
     
+    
 }
-#voucher{
-    display: none;
-}
+
 .row-voucher{
     width:100%;
     height:100%;
@@ -332,13 +355,120 @@ aside ul{
     margin:10px;
     display: flex;
     justify-content: center;
+
 }
-.payemt-system{
-    width:100%;
-    height:300px;
-    background:red
+
+#payment,#voucherId,#initial,#voucher{
+    display: none;
+
 }
+
+.fileUplaod{
+    background-color: #003366;
+    border-radius: 3px;
+    color: white;
+    padding: 20px;
+    width:300px
+    
+}
+
+.rowPic {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text],.option-trade {
+  width: 600px;
+  margin-bottom: 20px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 0 35px 0 rgb(154 161 171 / 15%)
+}
+.option-trade {
+    width: 635px;
+
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #c34e0f;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 635px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #0796c6;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+.image-preview-container {
+    width: 180px;
+   height: 180px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 200px;
+    display: none;
+    margin:5px
+}
+
 @media(max-width:600px){
+    .rowPic {
+        flex-direction: column-reverse;
+      }
+      .col-25 {
+        margin-bottom: 20px;
+      }
     .voucher_market{
         left:0px;
         width:100%

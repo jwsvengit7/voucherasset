@@ -1,4 +1,4 @@
-<header class="header display ">
+<header class="header display fullcolor">
 
             <a  href="../index.html" style="width:17%;height:100%;align-items:center;display: flex;justify-content: center;">
                  <img width="80" height="80" alt="Ignite" class="ro" src="logo.png">

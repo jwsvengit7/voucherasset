@@ -1,5 +1,8 @@
-<aside>
-                <div class="sidebar">
+<div class="row-loader">
+
+</div>
+<aside class="fullcolor">
+                <div class="sidebar fullcolor">
                     <ul class="sidebar-content " >
                         <li class="li-content-sidebar darkblue"  id="l1">
                             <svg viewBox="0 0 28 28" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x5e5rjt" fill="currentColor" height="28" width="28"><path d="M25.825 12.29C25.824 12.289 25.823 12.288 25.821 12.286L15.027 2.937C14.752 2.675 14.392 2.527 13.989 2.521 13.608 2.527 13.248 2.675 13.001 2.912L2.175 12.29C1.756 12.658 1.629 13.245 1.868 13.759 2.079 14.215 2.567 14.479 3.069 14.479L5 14.479 5 23.729C5 24.695 5.784 25.479 6.75 25.479L11 25.479C11.552 25.479 12 25.031 12 24.479L12 18.309C12 18.126 12.148 17.979 12.33 17.979L15.67 17.979C15.852 17.979 16 18.126 16 18.309L16 24.479C16 25.031 16.448 25.479 17 25.479L21.25 25.479C22.217 25.479 23 24.695 23 23.729L23 14.479 24.931 14.479C25.433 14.479 25.921 14.215 26.132 13.759 26.371 13.245 26.244 12.658 25.825 12.29"></path></svg>
@@ -16,31 +19,31 @@
 								</polygon>
 							</svg>
 
-                                <div id="slideDownLink" class="fonts hideNow">
-                                    <span class="text-d">Subscribe &nbsp; &nbsp; &nbsp;<i class="fa fa-angle-down f20" ></i></span>
+                                <div onclick="shows(0)"  class="fonts xchide hideNow">
+                                    <span class="text-d" ><span style="margin-right:35px">Subscribe </span><i class="fa fa-angle-down f20" ></i></span>
                                 </div>
                         </li>
-                        <div id="show-hide">
+                        <div class="show-hide">
                             <li class="li-contents-slide">
                                 <i class="fa fa-money darkblue f20"></i>
     
-                                <div class="fonts hideNow "><span class="text-df11">Manual Payment</span>	</div> 
+                                <div class="fonts hideNow " id="l3"><span class="text-df11 darkblue">Manual Payment</span>	</div> 
                             </li>
                             <li class="li-contents-slide">
-                                <i class="fa fa-cc-paypal sitecolor f20"></i>
+                                <i class="fa fa-cc-paypal darkblue f20"></i>
     
-                                <div class="fonts hideNow "><span class="text-df11">Online Payment</span>	</div> 
+                                <div class="fonts hideNow "><span class="text-df11 darkblue">Online Payment</span>	</div> 
                             </li>
                         </div>
 
-                        <li class="li-content-sidebar darkblue"  id="3">
+                        <li class="li-content-sidebar darkblue"  id="l4">
                             <i class="fa fa-signal f25"></i>
                                 <div class="fonts hideNow"><span class="text-d">Trade Forum</span>
                                 </div>
 
 
                         </li>
-                        <li class="li-content-sidebar darkblue">
+                        <li class="li-content-sidebar darkblue" id="l5">
                          <i class="fa fa-shopping-cart f25"></i>
 
                                 <div class="fonts hideNow"><span class="text-d">Initiate a Trade</span>	</div>
@@ -48,8 +51,37 @@
                         <li class="li-content-sidebar darkblue">
                             <i class="fa fa-gear f25"></i>
 
-                                <div class="fonts hideNow"><span class="text-d">Settings</span>	</div>
+                                <div  onclick="shows(1)" class="fonts  hideNow">
+                                    <span class="text-d"><span style="margin-right:50px">Settings</span> <i class="fa fa-angle-down f20" ></i></span>
+                                </div>
                         </li>
+                        <div class="show-hide" >
+                            <li class="li-contents-slide">
+                                <i class="fa fa-envelope darkblue f20"></i>
+    
+                                <div class="fonts hideNow "><span class="text-df11 darkblue">Log</span>	</div> 
+                            </li>
+                            <form  method="post" action="" name="light" class="li-contents-slide" id="light-dark" >
+                                <input name ="light" value="<?php echo $bgcolorto;?>" hidden>
+                                <button type="submit" id="butt"><i class="fa fa-lightbulb-o darkblue f20"></i></button>
+    
+                                <label  for="butt" class="fonts hideNow "><span class="text-df11 darkblue">Light</span>
+</label>
+                           
+                            </form>
+
+
+                            <li class="li-contents-slide">
+                                <i class="fa fa-user darkblue f20"></i>
+    
+                                <div class="fonts hideNow "><span class="text-df11 darkblue">Profile</span>	</div> 
+                            </li>
+                            <li class="li-contents-slide">
+                                <i class="fa fa-signal darkblue f20"></i>
+    
+                                <div class="fonts hideNow "><span class="text-df11 darkblue">Marketing</span>	</div> 
+                            </li>
+                        </div>
                         <li class="li-content-sidebar darkblue">
                             <i class="fa fa-bar-chart f20"></i>
 
@@ -58,12 +90,7 @@
                     </ul>
                 </div>
 <script>
-//     $(()=>{
-//         $(".li-content-sidebar").on("click",function(){
-//     $(this).append("<h1>hello</h1>")
-//    })
-//     })
-  
+
 
     </script>
             </aside>  

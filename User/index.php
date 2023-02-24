@@ -14,6 +14,8 @@ include 'accessToken.php';
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css'  href='../css/mystyle.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <link rel='stylesheet' type='text/css'  href='css/style.css'>
     <script src='../theme/jquery.php/core/jquery-3.2.1.min.js'></script>
@@ -22,44 +24,23 @@ include 'accessToken.php';
 </head>
 <body>
     <style>
-        #app ,aside ,.sidebar,header{
-            background:<?php echo $bgcolor;?>;
+         .fullcolor,.main-right{
+            background:<?php echo $bgcolor;?> ;
         }
-        .darkblue,.text-d{
+        .textBg,.darkblue,.text-d{
             color: <?php echo $bgcolorText;?> !important
-
-
         }
-        .voucer_1{
-            background-color:<?php echo $boxcolorwhite;?>
-
-        }
-        .voucer_1 span{
-           color:<?php echo $co;?>
-
-        }
-        .black{
-            color: <?php echo $co;?> !important
-
-        }
-        .voucher_market{
-            background:<?php echo $bgcolor;?>;
-        }
-        .voucher_market h3{
-            color: <?php echo $co;?> !important
-
-        }
-        .box,.boxAgent{
+        .bgsidebg,.app-container{
+            background-color:<?php echo $sidebg;?>
+        } 
+        .check_voucer,.voucer_1, .row-tabs{
             background-color:<?php echo $boxcolor;?>
-
-
         }
-        .row-tabs{
-            background:<?php echo $boxcolor;?>
- 
-        }
+        .co,.voucer_1 span,.black,.voucher_market h3{
+           color:<?php echo $co;?> !important;
+        }         
     </style>
-    <div id="app" >
+    <div id="app" class="fullcolor">
         <?php
         include "header.php";
         ?>
@@ -71,12 +52,8 @@ include 'accessToken.php';
           <?php
           include "main.php";
           ?>
-           
-            
-
+          
         </div>
-      
-
     </div>
 
 </body>

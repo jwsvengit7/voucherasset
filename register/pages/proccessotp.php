@@ -1,9 +1,11 @@
 <?php
 session_start();
-include "config.php";
+include "../config.php";
 
 $otp=$_POST['code'];
 if ($otp===$_SESSION['otp']) {
+
+	
 	// code...
 	$username=$_SESSION['username'];
 	$email=$_SESSION['email'];
@@ -15,8 +17,7 @@ if ($otp===$_SESSION['otp']) {
 
 // pass the error to json
 		$error['error'] = "Already Inserted";
-		header("Content-type:application/json");
-		header("Access-Control-Allow-Origin: *");
+		
 	}
 	 else{
 	 	$time=time();
@@ -32,26 +33,21 @@ if ($otp===$_SESSION['otp']) {
 
 	 					$error['status'] = 'success';
 						$error['ok'] = $_SESSION['ok'];
-						$error['url'] = "index.php?ok=".$_SESSION['ok'];
-						header("Content-type:application/json");
-						header("Access-Control-Allow-Origin: *");
+						$error['url'] = "index.php?ok=".$_SESSION['ok'];						
 					} else {
 							$error['status'] = 'error';
 							$error['ok'] = 0;
-							$error['url'] = "otp.php";	
-							header("Content-type:application/json");
-							header("Access-Control-Allow-Origin: *");
-					}
-			
+							$error['url'] = "otp.php";			
+					}			
 	 		}
-
 	 }
 } else {
 	$error['error'] = "Invalid OTP";
-	header("Content-type:application/json");
-	header("Access-Control-Allow-Origin: *");
+	
 }
-	echo json_encode($error);
+		header("Content-type:application/json");
+		header("Access-Control-Allow-Origin: *");
+		echo json_encode($error);
 
 
 ?>

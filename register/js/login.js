@@ -2,7 +2,7 @@ $(function (e) {
 
 	$("#signupform").on("submit",function(e) {
 		e.preventDefault();
-		const url="http://localhost/voucherasset/register/proccessignup.php";
+		const url="http://localhost/voucherasset/register/pages/proccessignup.php";
 
 		$.ajax({
 			url:url,
@@ -56,7 +56,7 @@ $(function (e) {
 	$("#login-form-section").on("submit",function(e){
 		e.preventDefault();
 		$.ajax({
-			url:"proccesslogin.php",
+			url:"http://localhost/voucherasset/register/pages/proccesslogin.php",
 			type:"POST",
 			data:new FormData(this),
 			cache:false,
@@ -91,7 +91,7 @@ $(function (e) {
 	$("#otpform").on("submit",function (e) {
 		e.preventDefault();
 		$.ajax({
-			url:"proccessotp.php",
+			url:"http://localhost/voucherasset/register/pages/proccessotp.php",
 			type:"POST",
 			data:new FormData(this),
 			cache:false,

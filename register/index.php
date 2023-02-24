@@ -18,7 +18,6 @@ if ($_SESSION['ok']==1) {
     <link href="//fonts.googleapis.com/css?family=Jost" rel="stylesheet">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="moodle, Ignite" />
-<link rel="stylesheet" type="text/css" href="../theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css"></script>
 <link rel="stylesheet" type="text/css" href="../theme/styles.php/ignite/1663148226_1/all.css" />
 <link rel="stylesheet" type="text/css" href="../theme/ignite/assets/social-icons.css" />
 <link rel="stylesheet" type="text/css" href="../theme/ignite/assets/foronlydemo.css" />
@@ -35,15 +34,10 @@ if ($_SESSION['ok']==1) {
 	
     <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
 </div><script src="../lib/javascript.php/1662375728/lib/mdn-polyfills/polyfill.js"></script>
-<script src="../theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="../theme/jquery.php/core/jquery-3.2.1.min.js"></script>
-<script src="../lib/javascript.php/1662375728/lib/javascript-static.js"></script>
+<script src="../theme/jquery.php/core/jquery-3.2.1.min.js"></script>
 <script src="../theme/javascript.php/ignite/1663148226/head.js"></script>
 <script src="js/login.js"></script>
-<script>
-//<![CDATA[
-document.body.className += ' jsenabled';
-//]]>
-</script>
+
 
 <div id="app">
 

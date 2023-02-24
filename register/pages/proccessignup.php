@@ -1,37 +1,32 @@
 <?php
 session_start();
-include "config.php";
+include "../config.php";
 $username = $_POST['username'];
 $email = $_POST['email'];
 $password = $_POST['password'];
 $cpass = $_POST['cpassword'];
 $results=array();
-$response = [];
 
 if (empty($username) && strlen($username)<5) {
-	$response['status'] = 'username sholud more than 4';
-
+	$results['status'] = 'username sholud more than 4';
 
 }
 elseif (empty($email)) {
-	$response['status'] = 'email is empty';
-
+	$results['status'] = 'email is empty';
 
 }
 elseif (empty($password) || strlen($password)<7) {
-	$response['status'] = 'password should be more than 7';
-
+	$results['status'] = 'password should be more than 7';
 
 }
 elseif ($password!==$cpass) {
-	$response['status'] = 'password does not match';
-
+	$results['status'] = 'password does not match';
 
 }
 else{
 	$check_record=$conn->query("SELECT * FROM signup WHERE email = '$email' ");
 	if ($check_record->num_rows>0) {
-		$response['status'] = 'Email Already Exist';
+		$results['status'] = 'Email Already Exist';
 
 	 }else{
 		$_SESSION['otp']=substr(md5(uniqid(true)),0,5);
@@ -42,16 +37,16 @@ else{
 			
 
 
-			$response['status'] = 'success';
-			$response['ok'] = 1;
-			$response['url'] = "otp.php";
+			$results['status'] = 'success';
+			$results['ok'] = 1;
+			$results['url'] = "otp.php";
 
 	}
 }
 }
 header("Content-type:application/json");
 header("Access-Control-Allow-Origin: *");
-		echo json_encode($response);
+echo json_encode($results);
 
 
 

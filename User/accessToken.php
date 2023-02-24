@@ -1,7 +1,6 @@
 <?php
 
-if ($_GET['ok']==$_SESSION['ok']) {    
-
+if ($_GET['ok']==$_SESSION['ok'] && isset($_SESSION['email'])) {    
     $loopQuery=$conn->query("SELECT * FROM signup WHERE email='".$_SESSION['email']."'");
     if ($loopQuery->num_rows>0) {
         $loopAll=$loopQuery->fetch_assoc();
@@ -11,27 +10,25 @@ if ($_GET['ok']==$_SESSION['ok']) {
         $password=$loopAll['password'];
         $dob=$loopAll['dob'];
         $access_token=$loopAll['access_token'];
+        
         $myownreferrid=$loopAll['myownreferrid'];
         $referrerid=$loopAll['referrerid'];
         $profile=$loopAll['profile'];
         $bgcolor=$loopAll['color'];
-        if($bgcolor!="white"){
+        if($bgcolor!="light"){
             $bgcolorText="#ccc";
             $bgcolor="#0c151a";
             $boxcolor="rgb(21, 32, 43)";
-            $boxcolorwhite="rgb(21, 32, 43)";
             $co="white";
-
-
+            $sidebg="rgb(21, 32, 43)";
+            $bgcolorto = "light";
         }else{
             $bgcolorText="#003366";
-            $boxcolorwhite="white";
-
+            $sidebg="#f8f8f8";
             $bgcolor="#fff";
-            $boxcolor="#f8f8f8";
+            $boxcolor="#fff";
             $co="black";
-
-
+            $bgcolorto = "dark";
         }
 
         $select_amount=$conn->query("SELECT * FROM deposit WHERE access_token='$access_token'");
@@ -41,7 +38,6 @@ if ($_GET['ok']==$_SESSION['ok']) {
         }else{
             $amount=number_format(0).'.00';
         }
-
         $active_forum=$conn->query("SELECT * FROM `voucher_market` ");
         $my=$active_forum->fetch_array();
         $forum1=$my['trade_forum_1'];
@@ -50,7 +46,6 @@ if ($_GET['ok']==$_SESSION['ok']) {
     }else{
             echo '<script>window.location.href="../register/"</script>';
     }
-
 } else {
     die('Error 404 Handling');
 }

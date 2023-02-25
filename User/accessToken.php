@@ -1,5 +1,4 @@
 <?php
-
 if ($_GET['ok']==isset($_SESSION['ok']) && isset($_SESSION['email'])) {    
 
     $loopQuery=$conn->query("SELECT * FROM signup WHERE email='".$_SESSION['email']."'");
@@ -16,7 +15,7 @@ if ($_GET['ok']==isset($_SESSION['ok']) && isset($_SESSION['email'])) {
         $profile=$loopAll['profile'];
         $bgcolor=$loopAll['color'];
         if($bgcolor!="light"){
-            $bgcolorText="#ccc";
+            $bgcolorText="#ccc"; 
             $bgcolor="#0c151a";
             $boxcolor="rgb(21, 32, 43)";
             $co="white";

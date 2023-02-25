@@ -76,7 +76,7 @@ changestateColor.on("submit", function (e) {
         type:"POST",
         url:"pages/light.php",
         data:new FormData(this),
-        catch:false,
+        cache:false,
         contentType:false,
         processData:false,
         beforeSend:()=>{
@@ -96,6 +96,25 @@ changestateColor.on("submit", function (e) {
         }
     })   
 })
+const previewImage = $("#uploadfile");
+previewImage.on("change",(event)=>{
+    const imageFiles = event.target.files;
+    const imageFilesLength = imageFiles.length; 
+    console.log(imageFiles)
+    if (imageFilesLength > 0) {  
+        const imageSrc = URL.createObjectURL(imageFiles[0]);     
+        const imagePreviewElement = $("#preview-selected-image");
+        const show = $(".image-preview-container");     
+        imagePreviewElement.attr("src",imageSrc);
+
+      
+        show.css({"display" :"block"});
+        imagePreviewElement.css({"display" :"block"});
+        imagePreviewElement.css({"width" :"100%"});
+        imagePreviewElement.css({"height" :"100%"});
+        imagePreviewElement.css({"border-radius" :200+"px"});
+    }
+});
 const subscribe=$("#subscribe-payment");
 subscribe.on("submit",function(e){
     e.preventDefault();
@@ -117,24 +136,7 @@ subscribe.on("submit",function(e){
     })
 })
 
-const previewImage = $("#uploadfile");
-previewImage.on("change",(event)=>{
-    const imageFiles = event.target.files;
-    const imageFilesLength = imageFiles.length; 
-    if (imageFilesLength > 0) {  
-        const imageSrc = URL.createObjectURL(imageFiles[0]);     
-        const imagePreviewElement = $("#preview-selected-image");
-        const show = $(".image-preview-container");     
-        imagePreviewElement.attr("src",imageSrc);
 
-      
-        show.css({"display" :"block"});
-        imagePreviewElement.css({"display" :"block"});
-        imagePreviewElement.css({"width" :"100%"});
-        imagePreviewElement.css({"height" :"100%"});
-        imagePreviewElement.css({"border-radius" :200+"px"});
-    }
-});
 
 })
 

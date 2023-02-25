@@ -1,6 +1,7 @@
 <?php
 
-if ($_GET['ok']==$_SESSION['ok'] && isset($_SESSION['email'])) {    
+if ($_GET['ok']==isset($_SESSION['ok']) && isset($_SESSION['email'])) {    
+
     $loopQuery=$conn->query("SELECT * FROM signup WHERE email='".$_SESSION['email']."'");
     if ($loopQuery->num_rows>0) {
         $loopAll=$loopQuery->fetch_assoc();
@@ -10,7 +11,6 @@ if ($_GET['ok']==$_SESSION['ok'] && isset($_SESSION['email'])) {
         $password=$loopAll['password'];
         $dob=$loopAll['dob'];
         $access_token=$loopAll['access_token'];
-        
         $myownreferrid=$loopAll['myownreferrid'];
         $referrerid=$loopAll['referrerid'];
         $profile=$loopAll['profile'];
@@ -22,22 +22,27 @@ if ($_GET['ok']==$_SESSION['ok'] && isset($_SESSION['email'])) {
             $co="white";
             $sidebg="rgb(21, 32, 43)";
             $bgcolorto = "light";
+
+
         }else{
             $bgcolorText="#003366";
             $sidebg="#f8f8f8";
+
             $bgcolor="#fff";
             $boxcolor="#fff";
             $co="black";
             $bgcolorto = "dark";
+
         }
 
         $select_amount=$conn->query("SELECT * FROM deposit WHERE access_token='$access_token'");
         if($select_amount->num_rows>0){
-            $record=fetch_array($select_amount);
+            $record=$select_amount->fetch_assoc;
             $amount=number_format($record['amount']).'.00';        
         }else{
             $amount=number_format(0).'.00';
         }
+
         $active_forum=$conn->query("SELECT * FROM `voucher_market` ");
         $my=$active_forum->fetch_array();
         $forum1=$my['trade_forum_1'];

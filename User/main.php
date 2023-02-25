@@ -522,7 +522,7 @@ templeate open lines
             <label class="darkblue" for="bank">Bank</label>
             <input type="text" id="bank" name="bank" placeholder="GT Bank" class="darkblue">
             <label class="darkblue" for="frum">Choose Trade Forum To subscribe</label>
-            <select class="option-trade" class="darkblue">
+            <select class="option-trade" name="amount" class="darkblue">
             <option value="200"><strike>N</strike>200 trade Forum</option>
             <option value="500"><strike>N</strike>500 trade Forum</option>
             <option value="1000"><strike>N</strike>1000 trade Forum</option>

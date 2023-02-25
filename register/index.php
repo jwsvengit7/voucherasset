@@ -1,8 +1,7 @@
 <?php
 session_start();
-if ($_SESSION['ok']==1) {
+if (isset($_SESSION['ok'])==1) {
     echo '<script>window.location.replace("../User/index.php?ok='.$_SESSION["ok"].'")</script>';
-    // code...
 }
 
 ?>

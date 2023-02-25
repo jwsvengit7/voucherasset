@@ -34,6 +34,7 @@ if ($_GET['ok']==isset($_SESSION['ok']) && isset($_SESSION['email'])) {
             $bgcolorto = "dark";
 
         }
+          
 
         $select_amount=$conn->query("SELECT * FROM deposit WHERE access_token='$access_token'");
         if($select_amount->num_rows>0){

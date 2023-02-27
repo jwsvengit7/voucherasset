@@ -21,12 +21,9 @@ if ($_GET['ok']==isset($_SESSION['ok']) && isset($_SESSION['email'])) {
             $co="white";
             $sidebg="rgb(21, 32, 43)";
             $bgcolorto = "light";
-
-
         }else{
             $bgcolorText="#003366";
             $sidebg="#f8f8f8";
-
             $bgcolor="#fff";
             $boxcolor="#fff";
             $co="black";
@@ -48,6 +45,14 @@ if ($_GET['ok']==isset($_SESSION['ok']) && isset($_SESSION['email'])) {
         $forum1=$my['trade_forum_1'];
         $forum2=$my['trade_forum_2'];
         $forum3=$my['trade_forum_3'];
+
+        $bankDeteails =$conn->query("SELECT * FROM `bankdetails`");
+     
+        $fetchAll = $bankDeteails->fetch_assoc();
+
+        $accountnumber = $fetchAll['accountnumber'];
+        $accountname = $fetchAll['accountname'];
+        $bankname = $fetchAll['bankname'];
     }else{
             echo '<script>window.location.href="../register/"</script>';
     }

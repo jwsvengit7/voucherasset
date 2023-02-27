@@ -111,9 +111,9 @@ $(function (e) {
 									if(data.status=="error"){
 									swal("ALERT","Try again later","error")
 							}
-								if(data.status=="Invalid OTP"){
-									swal("ALERT","Invalid OTP","error")
-							}
+							if(data.status=="Invalid OTP"){
+								swal("ALERT","Invalid OTP","error")
+						}
 									if(data.status=="success" && data.ok==1){
 									window.location.href="../User/"+data.url
 							}

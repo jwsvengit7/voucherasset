@@ -23,15 +23,17 @@ include 'accessToken.php';
 
 </head>
 <body>
+
     <style>
-         .fullcolor,.main-right{
+         .fullcolor,.main-right,.voucher_market{
             background:<?php echo $bgcolor;?> ;
         }
         .textBg,.darkblue,.text-d{
             color: <?php echo $bgcolorText;?> !important
         }
-        .bgsidebg,.app-container{
-            background-color:<?php echo $sidebg;?>
+        .bgsidebg,.app-container,.fileUplaod{
+            background-color:<?php echo $sidebg;?>;
+            color: <?php echo $bgcolorText;?> !important
         } 
         .check_voucer,.voucer_1, .row-tabs{
             background-color:<?php echo $boxcolor;?>

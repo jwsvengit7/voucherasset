@@ -294,23 +294,13 @@ $("#rows").append(`
     <p class="f14 red">20%</p></div>
     <div class="row-chart" >
         <div class="chart-row wi-20 redbg" >
-
-     
-
         </div>
-
     </div>
-
     </div>
-
 </div>
 
-
-
 </div>
-
 <div style="width:98%;height:auto;padding: 10px;">
-
 <div class="row-col-table wi-100 display wrap justify-space-between">
 <div class="boxAgent fullcolor display align-items"> 
         <div class="wi-100 display justify-space-between align-items">
@@ -389,13 +379,6 @@ $("#rows").append(`
 </div>
 
 
-
-<!-- 
-
-templeate open lines
-
- -->
-
             <div id="voucher" class="voucher_market fullcolor">
                 <div class="wi-100 row-voucher">
                 <div class="row-item-api flex-direction">
@@ -411,12 +394,11 @@ templeate open lines
                 <div class="voucer_1 align-items justify-space-around ">
                 <img src="../images/voucher.png" width="80"> 
                 <label>
-                    <span>Trade Forum <strike>N</strike>200N
+                    <span>Trade Forum <strike>N</strike>200N</span>
                 </label>
                 <label> 
-                    <span>Last for 4 Hours <strike>3 Hours</strike> Now
+                    <span>Last for 4 Hours <strike>3 Hours</strike> Now</span>
                 </label>
-
                 </div>
             <?php
                     }                   
@@ -426,10 +408,10 @@ templeate open lines
             <div class="voucer_1 align-items justify-space-around">
                 <img src="../images/voucher2.png" width="80"> 
                 <label>
-                    <span>Trade Forum <strike>N</strike>500N
+                    <span>Trade Forum <strike>N</strike>500N</span>
                 </label>
                 <label>
-                    <span>Last for 4 Hours <strike>3 Hours</strike> Now
+                    <span>Last for 4 Hours <strike>3 Hours</strike> Now</span>
                 </label>
 
             </div>
@@ -441,10 +423,10 @@ templeate open lines
             <div class="voucer_1 align-items justify-space-around">
                 <img src="../images/voucher3.png" width="80"> 
                 <label>
-                    <span>Trade Forum <strike>N</strike>1000N
+                    <span>Trade Forum <strike>N</strike>1000N</span>
                 </label>
                 <label>
-                    <span>Last for 4 Hours <strike>3 Hours</strike> Now
+                    <span>Last for 4 Hours <strike>3 Hours</strike> Now</span>
                 </label>
 
             </div>
@@ -497,12 +479,12 @@ templeate open lines
           <div class="col-50">
             <h3 class="darkblue">Billing Address</h3>
             <label for="fname" class="darkblue"><i class="fa fa-user"></i> Full Name</label>
-            <input type="text" id="fname" name="username" class="darkblue" value="<?php echo $username;?>" readonly>
+            <input type="text" id="fname" name="username" value="<?php echo $username;?>" readonly>
             <label for="email" class="darkblue"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text" id="email" class="darkblue" name="email" value="<?php echo $email;?>" readonly>
+            <input type="text" id="email" name="email" value="<?php echo $email;?>" readonly>
             <label for="adr" class="darkblue"><i class="fa fa-address-card-o"></i> Address</label>
-            <input type="text" class="darkblue" id="adr" name="address" value="542 W. 15th Street" readonly>
-            <input type="hidden" name="id" class="darkblue" value="<?php echo $access_token;?>">
+            <input type="text"  id="adr" name="address" value="542 W. 15th Street" readonly>
+            <input type="hidden" name="id"  value="<?php echo $access_token;?>">
             
           </div>
 
@@ -516,11 +498,11 @@ templeate open lines
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
             <label class="darkblue" for="accountname">Account Name</label>
-            <input type="text" id="accountname" class="darkblue" name="accountname" placeholder="Voucher Asset">
+            <input type="text" id="accountname"  name="accountname" readonly value="<?php echo $accountname;?>">
             <label class="darkblue" for="accountnumber">Account number</label>
-            <input type="text" id="accountnumber" class="darkblue" name="accountnumber" placeholder="154567444">
+            <input type="text" id="accountnumber"  name="accountnumber" readonly value="<?php echo $accountnumber;?>">
             <label class="darkblue" for="bank">Bank</label>
-            <input type="text" id="bank" name="bank" placeholder="GT Bank" class="darkblue">
+            <input type="text" id="bank" name="bank" readonly value="<?php echo $bankname;?>" >
             <label class="darkblue" for="frum">Choose Trade Forum To subscribe</label>
             <select class="option-trade" name="amount" class="darkblue">
             <option value="200"><strike>N</strike>200 trade Forum</option>
@@ -534,7 +516,7 @@ templeate open lines
             <img id="preview-selected-image" />
             </div>
         
-           
+        
           </div>
 
         </div>
@@ -566,6 +548,20 @@ templeate open lines
                         <label>
                             <h3>&nbsp;&nbsp;&nbsp;Trade Forum</h3>
                         </label>
+                        <div style="width:100%;height:500px;">
+
+                        <div class="width:100%;display:flex">
+                        <div class="voucer_1 align-items justify-space-around ">
+                <img src="../images/voucher.png" width="80"> 
+                <label>
+                    <span>Trade Forum <strike>N</strike>200N</span>
+                </label>
+                <label> 
+                    <span>Last for 4 Hours <strike>3 Hours</strike> Now</span>
+                </label>
+                </div>
+                        </div>
+                         </div>
                 </div>
     </div>
     </div>

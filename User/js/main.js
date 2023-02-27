@@ -79,9 +79,7 @@ changestateColor.on("submit", function (e) {
         cache:false,
         contentType:false,
         processData:false,
-        beforeSend:()=>{
-            $(".row-loader").show()
-        },
+        beforeSend:()=>{$(".row-loader").show()},
         success:(data)=>{
             var x=0
            setInterval(() => {
@@ -89,7 +87,7 @@ changestateColor.on("submit", function (e) {
              if (x==3 && data.result=="changestate") {
                window.location.reload("http://localhost/voucherasset/User/index.php?ok=1");
              } 
-           }, 1000);
+            }, 1000);
         },
         error:(er)=>{
             alert("error")
@@ -105,9 +103,7 @@ previewImage.on("change",(event)=>{
         const imageSrc = URL.createObjectURL(imageFiles[0]);     
         const imagePreviewElement = $("#preview-selected-image");
         const show = $(".image-preview-container");     
-        imagePreviewElement.attr("src",imageSrc);
-
-      
+        imagePreviewElement.attr("src",imageSrc);    
         show.css({"display" :"block"});
         imagePreviewElement.css({"display" :"block"});
         imagePreviewElement.css({"width" :"100%"});
@@ -131,12 +127,9 @@ subscribe.on("submit",function(e){
         success:(data)=>{
             console.log(data)
             swal("Alert",data.result,"success");
-
         }
     })
 })
-
-
 
 })
 

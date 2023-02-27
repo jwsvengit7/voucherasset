@@ -413,7 +413,6 @@ $("#rows").append(`
                 <label>
                     <span>Last for 4 Hours <strike>3 Hours</strike> Now</span>
                 </label>
-
             </div>
             <?php
                     }
@@ -428,37 +427,25 @@ $("#rows").append(`
                 <label>
                     <span>Last for 4 Hours <strike>3 Hours</strike> Now</span>
                 </label>
-
             </div>
             <?php
                 }
                     ?>
-
             <div class="row_id_Advert">
-                <div class="advert_promo">
-                
+                <div class="advert_promo">               
                     <div class="advert_rotation">
                     <div class="box-rotate">
                         <img src="../images/animate1.png" width="180">
                     </div>
                     <div class="box-rotate">
                     <img src="../images/animate2.png" width="180">
-
                     </div>
                     <div class="box-rotate">
                     <img src="../images/animate1.png" width="180">
-
                     </div>
                     <div class="box-rotate">
                     <img src="../images/animate2.png" width="180">
-
-                    </div>                  
-                    </div>
-                </div>             
-            </div>
-            </div>
-            </div>
-            </div>
+                    </div></div></div></div></div> </div> </div>
  <!-- 
     close lines
   -->
@@ -474,7 +461,6 @@ $("#rows").append(`
   <div class="col-75">
     <div class="container">
       <form  method="post" action="pages/paySubscription.php" id="subscribe-payment" enctype="multipart/form-data">
-
         <div class="rowPic">
           <div class="col-50">
             <h3 class="darkblue">Billing Address</h3>
@@ -484,8 +470,7 @@ $("#rows").append(`
             <input type="text" id="email" name="email" value="<?php echo $email;?>" readonly>
             <label for="adr" class="darkblue"><i class="fa fa-address-card-o"></i> Address</label>
             <input type="text"  id="adr" name="address" value="542 W. 15th Street" readonly>
-            <input type="hidden" name="id"  value="<?php echo $access_token;?>">
-            
+            <input type="hidden" name="id"  value="<?php echo $access_token;?>">   
           </div>
 
           <div class="col-50">
@@ -514,32 +499,13 @@ $("#rows").append(`
             <input type="file" hidden name="file" id="uploadfile" >
             <div class="image-preview-container">
             <img id="preview-selected-image" />
-            </div>
-        
-        
-          </div>
-
-        </div>
+            </div> </div></div>
         <label class="darkblue">
           <input type="checkbox" checked="checked" name="sameadr">Checkout if Paid
         </label>
         <input type="submit" value="Continue to checkout" class="btn">
-      </form>
-    </div>
-  </div>
-
-</div>
-
-
-
-                         </div>
-                </div>
-                </div>
-                </div>
-
-</div>
-<style>
-</style>
+           </form>
+            </div></div></div></div></div></div> </div></div>
 
 <div class="voucher_market fullcolor" id="voucherId">
 <div class="wi-100 row-voucher">
@@ -575,7 +541,7 @@ $("#rows").append(`
                             <h3>&nbsp;&nbsp;&nbsp;Initiate a Trade</h3>
                         </label>
                 </div>
-    </div>
+        </div>
     </div>
 
 </div>

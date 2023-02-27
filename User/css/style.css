@@ -400,7 +400,7 @@ aside ul{
   border-radius: 3px;
 }
 
-input[type=text],.option-trade {
+.container input[type=text],.option-trade {
   width: 600px;
   margin-bottom: 20px;
   padding: 16px;
@@ -461,6 +461,13 @@ span.price {
 }
 
 @media(max-width:600px){
+    .container input[type=text],.option-trade {
+        width: 65%;
+       
+      }
+      .btn{
+        width:95%
+      }
     .rowPic {
         flex-direction: column-reverse;
       }

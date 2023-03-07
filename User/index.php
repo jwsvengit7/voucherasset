@@ -15,8 +15,7 @@ include 'accessToken.php';
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css'  href='../css/mystyle.css'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
+    
     <link rel='stylesheet' type='text/css'  href='css/style.css'>
     <script src='../theme/jquery.php/core/jquery-3.2.1.min.js'></script>
     <script src='js/main.js'></script>
@@ -35,7 +34,7 @@ include 'accessToken.php';
             background-color:<?php echo $sidebg;?>;
             color: <?php echo $bgcolorText;?> !important
         } 
-        .check_voucer,.voucer_1, .row-tabs{
+        .check_voucer,.voucer_1, .row-tabs,.container{
             background-color:<?php echo $boxcolor;?>
         }
         .co,.voucer_1 span,.black,.voucher_market h3{
@@ -48,13 +47,11 @@ include 'accessToken.php';
         ?>
         <div class="app-container display">
             <?php
-            include "sidebar.php";
-            ?>          
-         
+            include "sidebar.php";            
+            ?>                   
           <?php
-          include "main.php";
-          ?>
-          
+          include "main.php";  
+          ?>   
         </div>
     </div>
 

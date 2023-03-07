@@ -47,63 +47,7 @@ if (isset($_SESSION['ok'])==1) {
 
     <div class="container-fluid p0" style="display:block;">
   
-        <!--
-            ===Navigation Section //Start
-                                        -->
-            <nav id="header1 Light" class="navbar navbar-light bg-white navbar-expand moodle-has-zindex" aria-label="Site navigation">
-            
-                <div class="container-fluid">
-            
-                    <!-- Top Header Panel Start -->
-            
-                    <div class="top-header-panel">
-                        <div class="left-header-panel float-left col-lg-5">
-                           <!--  <div data-region="drawer-toggle" class="d-inline-block mr-3">
-                                <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-light bg-gray" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="icon fa fa-bars fa-fw " aria-hidden="true"  ></i><span class="sr-only">Side panel</span><span class="menu">Menu</span></button>
-                            </div> -->
-                            <div class="social-icon">
-                              <ul class="social-icon-list">
-                                  <li><a href="javascript:void(0)"><i class="fab fa-facebook-o"></i></a></li>
-                                  <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
-                                  <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
-                                  <li><a href="javascript:void(0)"><i class="fab fa-linkedin"></i></a></li>
-                              </ul>
-                            </div>
-                        </div>
-                        <div class="right-header-panel float-right col-lg-7">
-                            <ul class="call-us">
-                                <li class="login-combo-wrapper"><label ><em class="question"> </em><em><i class="fa fa-call-icon"></i>Click Here to log in</em><label></li>
-                            </ul>
-                             <ul class="nav navbar-nav ml-auto login-combo-wrapper" id="g">
-                                <!-- navbar_plugin_output -->
-                                <li class="nav-item">
-                                    
-                                </li>
-                                  <!-- user_menu -->
-                                <li class="custom-login d-flex align-items-center">
-                                    <div class="custom-login-wrapper"><a href="javascript:void(0)" class="login-link login-popup notloggedin" title="Log in"><i class="cb-loginlock-icon"></i></a><div class="ignite-login-section" style="display:none;"><div class="ignite-login-wrapper"><div class="login-section"><a href="#" class="cross-btn" title="Close">x</a><div class="left-panel"></div><div class="right-panel"><h1>Login</h1><form id="login-form-section" method="post" action="">
-
-                                        <div class="login-form-branch">
-                                            <label id="password-id">
-                                                <i class="fa fa-user"></i>
-                                            </label>
-                                            <input id="email-j" type="email" name="email" placeholder="Email" />
-                                            <i class="" aria-hidden="false"></i>
-                                        </div>
-
-                                        <div class="login-form-branch">
-                                            <label id="user">
-                                                <i class="fa fa-lock"></i></label>
-                                                <input id="login-password" type="password" name="password" placeholder="Enter Your Password" /></div>
-                                        <button type="submit" class="submit_btn btn btn-primary">Login</button><input type="hidden" name="logintoken" value="VCxgOx8BfDjAQelwoBqqajyQ6YXVjH5j" /></form><div class="autharrlist-section"></div></div></div></div></div></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Top Header Panel End -->
-            </nav>
+      
             
             <!-- Navigation Panel Start -->
             <div class="fixed-nav-element"></div>
@@ -138,19 +82,44 @@ if (isset($_SESSION['ok'])==1) {
                             </a>
                         </li>
                     </ul>
+
+
                     <ul class="search_container">
-                        <li class="custom-search-box">
-                            <a id="search_icon__eventhandler" class="search_button__connection" href="javascript:void(0)"><i class="cb-search-icon"></i></a><div class="cc_search__wrapper"><div class="cc_search__overlay"><a href="javascript:void(0)" class="cc_search__close" id="search_screen__close"><i class="fa fa-times"></i></a><div class="cc_search__modal"><div class="cc_search__modal___inner"><span class='g_search__message'>Please enable global searching if you require.</span><form id="theme-search" class="form_search__container" action="https://ignite.themecms.com/course/search.php"><fieldset><input id="theme-coursesearchbox" class="input_search__field" type="text" name="search" placeholder="Search courses" tabindex="-1" size="15"><input type="hidden" name="context" value="2"><i class="cb-search-icon search_ic__icon"><input value="" type="submit"></i></fieldset></form></div></div></div></div></li>
+                        <li class="custom-search-box display align-items" style="width:100%;height:100%;">
+                     
+                        
+                                    <div class="custom-login-wrapper" >
+                                        <a style="width:100px;height:40px;background:#0796c6;border-radius:4px;color:white" href="javascript:void(0)" class="display align-items justify-content login-link login-popup notloggedin" title="Log in"></i>Login</a>
+                                        <div class="ignite-login-section" style="display:none;"><div class="ignite-login-wrapper"><div class="login-section"><a href="#" class="cross-btn" title="Close">x</a><div class="left-panel"></div><div class="right-panel"><h1>Login</h1><form id="login-form-section" method="post" action="">
+
+                                        <div class="login-form-branch">
+                                            <label id="password-id">
+                                                <i class="fa fa-user"></i>
+                                            </label>
+                                            <input id="email-j" type="email" name="email" placeholder="Email" />
+                                            <i class="" aria-hidden="false"></i>
+                                        </div>
+
+                                        <div class="login-form-branch">
+                                            <label id="user">
+                                                <i class="fa fa-lock"></i></label>
+                                                <input id="login-password" type="password" name="password" placeholder="Enter Your Password" /></div>
+                                        <button type="submit" class="submit_btn btn btn-primary">Login</button><input type="hidden" name="logintoken" value="VCxgOx8BfDjAQelwoBqqajyQ6YXVjH5j" /></form><div class="autharrlist-section"></div></div></div></div></div></div>
+                                </li>       
+                        
+                        
+                   
                     </ul>
                     <ul class="navigation-main-wrapper">
                         <li class="home">
                             <a class="tst active" href="../index.html">Home</a>
                         </li>
                         <!-- custom_menu -->
-                        <ul class="navigation-wrapper"><li class="nav-dropdown-menu"><a href="?courses" class=" tst" role="menuitem" data-toggle="dropdown-item">Voucher</a><li><a href="" class="dropdown-item tst">News</a></li><li><a href="" class="dropdown-item tst">Trade</a></li><li><a href="" class="dropdown-item tst">Register</a></li><li class="nav-dropdown-menu langmenu-item"><a href="" class="dropdown-item tst" role="menuitem" data-toggle="dropdown-item" title="Language"><span class="lang-flag en" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/EN');"></span><span class="sname">en</span><span class="fname">English ‎(en)‎</span></a><ul class="dropdown-list-item"><li><a href="https://ignite.themecms.com/?lang=de" class="dropdown-item tst" title="Deutsch ‎(de)‎"><span class="lang-flag de" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/DE');"></span><span class="sname">de</span><span class="fname">Deutsch ‎(de)‎</span></a></li><li><a href="https://ignite.themecms.com/?lang=en" class="dropdown-item tst" title="English ‎(en)‎"></a></li><li><a href="https://ignite.themecms.com/?lang=es" class="dropdown-item tst" title="Español - Internacional ‎(es)‎"><span class="lang-flag es" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/ES');"></span><span class="sname">es</span><span class="fname">Español - Internacional ‎(es)‎</span></a></li><li><a href="https://ignite.themecms.com/?lang=la" class="dropdown-item tst" title="Latin ‎(la)‎"><span class="lang-flag la" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/LA');"></span><span class="sname">la</span><span class="fname">Latin ‎(la)‎</span></a></li><li><a href="https://ignite.themecms.com/?lang=ro" class="dropdown-item tst" title="Română ‎(ro)‎"><span class="lang-flag ro" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/RO');"></span><span class="sname">ro</span><span class="fname">Română ‎(ro)‎</span></a></li><li><a href="https://ignite.themecms.com/?lang=ur" class="dropdown-item tst" title="اردو ‎(ur)‎"><span class="lang-flag ur" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/noflag');"></span><span class="sname">ur</span><span class="fname">اردو ‎(ur)‎</span></a></li></ul></ul>
-                        <!-- page_heading_menu -->
-                        
-                        
+                        <ul class="navigation-wrapper"><li class="nav-dropdown-menu"><a href="?courses" class=" tst" role="menuitem" data-toggle="dropdown-item">Voucher</a><li><a href="" class="dropdown-item tst">News</a></li><li><a href="" class="dropdown-item tst">Trade</a></li><li><a href="" class="dropdown-item tst">Register</a></li>
+                    </ul>
+                    
+                    </ul>
+                      
                     </ul>
                     
                 </div>
@@ -168,7 +137,7 @@ include "csslogin.php";
                                    
 
                                     <div class="login-form-branch2">
-                                            <label id="userid">
+                                            <label ç>
                                                 <i class="fa fa-user"></i>
                                             </label>
                                             <input id="userid" type="" name="username" placeholder="Username" />
@@ -190,13 +159,22 @@ include "csslogin.php";
                                             <i class="" aria-hidden="false"></i>
                                         </div>
 
-                                    <div class="login-form-branch2">
+                                        <div class="login-form-branch2">
                                             <label id="cpassword-id">
                                                 <i class="fa fa-lock"></i>
                                             </label>
-                                            <input id="cpassword-id" type="password" name="cpassword" placeholder="Confirm Password" />
+                                            <input id="cpassword-ids" type="password" name="cpassword" placeholder="Confirm Password" />
                                             <i class="" aria-hidden="false"></i>
                                         </div>
+                                        <div class="login-form-branch2">
+                                            <label id="referer">
+                                                <i class="fa fa-users"></i>
+                                            </label>
+                                            <input id="referer" type="" name="referer" placeholder="Referer ID" />
+                                            <i class="" aria-hidden="false"></i>
+                                        </div>
+
+                                      
                                           <button type="submit" id="log" class="submit_btn btn btn-primary">Sign Up</button>
 
                                           <div  class="topload">

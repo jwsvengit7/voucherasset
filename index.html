@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 
 <html  dir="ltr" lang="en" xml:lang="en">
@@ -61,16 +59,36 @@ document.body.className += ' jsenabled';
                         </div>
                         <div class="right-header-panel float-right col-lg-7">
                             <ul class="call-us">
-                                <li><em class="question">Questions?</em><em><i class="cb-call-icon"></i>123-123-1234</em></li>
+                                <li><em><i class="fa fa-phone"></i> 123-123-1234</em></li>
                             </ul>
                              <ul class="nav navbar-nav ml-auto login-combo-wrapper">
                                 <!-- navbar_plugin_output -->
-                                <li class="nav-item">
-                                    
-                                </li>
+                              
                                   <!-- user_menu -->
                               <li class="custom-login d-flex align-items-center">
-                                    <div class="custom-login-wrapper"><a href="javascript:void(0)" class="login-link login-popup notloggedin" title="Log in"><i class="cb-loginlock-icon"></i></a><div class="ignite-login-section" style="display:none;"><div class="ignite-login-wrapper"><div class="login-section"><a href="#" class="cross-btn" title="Close">x</a><div class="left-panel"></div><div class="right-panel"><h1>Subscribe</h1><form id="login-form-section" method="post" action=""><div class="login-form-branch"><label id="user"><i class="fa fa-user"></i></label><input id="login-username" type="text" name="username" placeholder="User Name" /></div><div class="login-form-branch"><label id="password-id"><i class="fa fa-envelope"></i></label><input id="email-j" type="email" name="email" placeholder="Email" /><i class="" aria-hidden="false"></i></div><button type="submit" class="submit_btn btn btn-primary">Subscribe</button><input type="hidden" name="logintoken" value="" /></form><div class="autharrlist-section"></div></div></div></div></div></div>
+                                    <div class="custom-login-wrapper">
+                                        <a href="javascript:void(0)" class="login-link login-popup notloggedin" title="Log in"><i  class="">Subscribe</i></a>
+                                        <div class="ignite-login-section" style="display:none;">
+                                            <div class="ignite-login-wrapper"><div class="login-section">
+                                                <a href="#" class="cross-btn" title="Close">x</a>
+                                                <div class="left-panel"></div><div class="right-panel"><h1>Subscribe</h1>
+                                                    <form id="login-form-section" method="post" action="">
+                                                        <div class="login-form-branch"><label id="user"><i class="fa fa-user"></i></label>
+                                                           
+ <input id="login-username" type="text" name="username" placeholder="User Name" />
+                                                        </div>
+                                                        <div class="login-form-branch"><label id="password-id"><i class="fa fa-envelope"></i>
+                                                        </label>
+                                                        <input id="email-j" type="email" name="email" placeholder="Email" /><i class="" aria-hidden="false"></i>
+                                                    </div>
+                                                    <button type="submit" class="submit_btn btn btn-primary">Subscribe</button>
+                                                        <input type="hidden" name="logintoken" value="" /></form>
+                                                        <div class="autharrlist-section"></div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                </div>
                                 </li>
                             </ul>
                         </div>
@@ -90,11 +108,47 @@ document.body.className += ' jsenabled';
 	 	width:258px;
 	 	height:65px;
  	}
-      @media(max-width:600px){
-        .ro{
-     width: 80px !important;
-        height:80px;
+     
+element.style {
+}
+nav.navbar ,.main-banner-section .inner-banner-section .single-style-banner .overlay-bg {
+    background-image: -moz-linear-gradient(0deg,#0796c6 0%,#0796c6 100%);
+    background-image: -webkit-linear-gradient(0deg,#0796c6 0%,#0796c6 100%);
+    background-image: -ms-linear-gradient(0deg,#0796c6 0%,#0796c6 100%);
+
+}
+@media(max-width:800px){
+       
+    .rr{
+        display:block !important
     }
+    }
+
+    @media(max-width:600px){
+        .ro{
+     width: 70px !important;
+        height:70px;
+    }
+    .search_container{
+     position: fixed;
+     top: 600px;
+     left: 30px;
+     z-index: 9999;
+
+    }
+    .w2{
+        left: 150px;
+    }
+ 
+    }
+   
+    .custom-search-box{
+        width:100%;height:100%;
+    }
+    .custom-login-wrapper a{
+        width:150px;height:40px;
+        background:#0796c6;
+        border-radius:4px;color:white
     }
 </style>
 
@@ -114,16 +168,28 @@ document.body.className += ' jsenabled';
                         </li>
                     </ul>
                     <ul class="search_container">
-                        <li class="custom-search-box">
-                            <a id="search_icon__eventhandler" class="search_button__connection" href="javascript:void(0)"><i class="cb-search-icon"></i></a><div class="cc_search__wrapper"><div class="cc_search__overlay"><a href="javascript:void(0)" class="cc_search__close" id="search_screen__close"><i class="fa fa-times"></i></a><div class="cc_search__modal"><div class="cc_search__modal___inner"><span class='g_search__message'>Please enable global searching if you require.</span><form id="theme-search" class="form_search__container" action="https://ignite.themecms.com/course/search.php"><fieldset><input id="theme-coursesearchbox" class="input_search__field" type="text" name="search" placeholder="Search courses" tabindex="-1" size="15"><input type="hidden" name="context" value="2"><i class="cb-search-icon search_ic__icon"><input value="" type="submit"></i></fieldset></form></div></div></div></div></li>
+                        <li class="custom-search-box display align-items">
+                        
+                       <div class="custom-login-wrapper" >
+                            <a href="register/" 
+                            class="display align-items justify-content login-link  notloggedin" 
+                            title="Log in"></i>Sign Up - Login</a>
+                                       </div>
+                                </li>                   
                     </ul>
+                </ul>
+             
                     <ul class="navigation-main-wrapper">
                         <li class="home">
                             <a class="tst active" href="?redirect=0">Home</a>
                         </li>
                         <!-- custom_menu -->
                         <ul class="navigation-wrapper">
-                            <li class="nav-dropdown-menu"><li><a href="#/voucher" class="dropdown-item tst">Voucher </a></li><li><a href="#/news" class="dropdown-item tst">News</a></li><li><a href="#/jobs" class="dropdown-item tst">Jobs</a></li><li><a href="register/" class="dropdown-item tst">Register-Login</a></li><li class="nav-dropdown-menu langmenu-item"><a href="" class="dropdown-item tst" role="menuitem" data-toggle="dropdown-item" title="Language"><span class="lang-flag en" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/EN');"></span><span class="sname">en</span><span class="fname">English ‎(en)‎</span></a><ul class="dropdown-list-item"><li><a href="?lang=de" class="dropdown-item tst" title="Deutsch ‎(de)‎"><span class="lang-flag de" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/DE');"></span><span class="sname">de</span><span class="fname">Deutsch ‎(de)‎</span></a></li><li><a href="?lang=en" class="dropdown-item tst" title="English ‎(en)‎"></a></li><li><a href="?lang=es" class="dropdown-item tst" title="Español - Internacional ‎(es)‎"><span class="lang-flag es" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/ES');"></span><span class="sname">es</span><span class="fname">Español - Internacional ‎(es)‎</span></a></li><li><a href="https://ignite.themecms.com/?lang=la" class="dropdown-item tst" title="Latin ‎(la)‎"><span class="lang-flag la" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/LA');"></span><span class="sname">la</span><span class="fname">Latin ‎(la)‎</span></a></li><li><a href="?lang=ro" class="dropdown-item tst" title="Română ‎(ro)‎"><span class="lang-flag ro" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/RO');"></span><span class="sname">ro</span><span class="fname">Română ‎(ro)‎</span></a></li><li><a href="https://ignite.themecms.com/?lang=ur" class="dropdown-item tst" title="اردو ‎(ur)‎"><span class="lang-flag ur" style="background-image:url('https://ignite.themecms.com/theme/image.php/ignite/theme/1663148226/flags/48x32/noflag');"></span><span class="sname">ur</span><span class="fname">اردو ‎(ur)‎</span></a></li></ul></ul>
+                            <li class="nav-dropdown-menu"><li><a href="#/voucher" class="dropdown-item tst">Voucher </a></li>
+                            <li><a href="#/jobs" class="dropdown-item tst">Jobs</a></li>
+                            <li><a href="register/" class="dropdown-item tst">Register-Login</a></li>
+                      
+                            </ul>
                         <!-- page_heading_menu -->
                         
                         
@@ -144,7 +210,7 @@ document.body.className += ' jsenabled';
         <div class="main-banner-section">
                     <div class="inner-banner-section">
                         <div class="banner-style-one single-style-banner d-flex container-fluid">
-                            <div class="b-content col-md-7">
+                            <div class="b-content rr col-md-7">
                                 <div class="banner-content-inner">
                                     <div class="b-inner-wrapper">
                                             <h1>Earn &amp; And Share</h1>
@@ -279,7 +345,7 @@ document.body.className += ' jsenabled';
         <div class="wlcme-sec mTopDiv" id="welcome">
         	<div class="container">
         		<div class="wlcme-left-sec col-lg-6">
-        				<h2>Welcome to Ignite</h2>
+        				<h2>Welcome to Voucher Asset</h2>
         				<span>Get 1000 Online Courses for Free</span>
         
         				<ul class="wlcme-cont">
@@ -288,7 +354,7 @@ document.body.className += ' jsenabled';
         								<i class="cb-onlinec-icon"></i>
         
         							<span class="wlc-heading-tag">
-        								<strong>Online Courses</strong>
+        								<strong>Voucher</strong>
         								<em>At vero eos et accusamus et iusto odio dignissimos...</em>
         							</span>
         						</h3>
@@ -376,33 +442,20 @@ document.body.className += ' jsenabled';
                         	<div id="frontpage-available-course-list" class="all_our_courses pTopDiv">
                          		<div class="container">
                          			<div class="all_our_courses_inner">
-                         					<h2><em class="tcc_ic"></em>All Our Courses</h2>
-                         					<span class="tagline">You can see here all our trendy courses</span>
+                         					<h2><em class="tcc_ic"></em>Our Values</h2>
+                         					<span class="tagline">You can see our values of commitment</span>
                          				<div class="course-layout-modifier"><a href="#" class="grid-view" title="grid-view" data-toggle="tooltip" data-trigger="hover"><i class="fa fa-th-large"></i></a><a href="#" class="list-view active" title="list-view" data-toggle="tooltip" data-trigger="hover"><i class="fa fa-th-list"></i></a></div>
                          			</div>
                          		</div>
                         	</div>
-                        <!--
-                        	//FrontPage Available Course List /*Or*/ All Our Courses End
-                        -->
-                        
-                        <!--
-                        	//Custom View All Courses Section/Button Start
-                        -->
+                       
                         	<div class="custom-course--btn-wrap mTopDiv">
                         		<div class="custom-course--btn--inner">
                         				<div class="cc--title"> <h4>Learn virtually is the new thing</h4> </div>
-                        				<div class="cc--btn"><h5><a href="https://ignite.themecms.com/course/" alt="View All Courses">View All Courses</a></h5></div>
+                        				<div class="cc--btn"><h5><a  alt="View All Courses">View All </a></h5></div>
                         		</div>
                         	</div>
-                        <!--
-                        	//Custom View All Courses Section/Button End
-                        -->
-                        
-                        <!--
-                        	//Site Announcement /*Or*/ Site News Start
-                        -->
-                        
+                    
                         <div id="news" class="site-news">
                         	<div class="site-news-inner">
                         		<div class="container site-news-inner-wrapper">
@@ -412,14 +465,7 @@ document.body.className += ' jsenabled';
                         	</div>
                         </div>
                         
-                        <!--
-                        	//Site Announcement /*Or*/ Site News End
-                        -->
-                        
-                        <!--
-                        	//FrontPage Course List /*Or*/ Enrolled Courses Start
-                        -->
-                        
+                   
                         <div id="frontpage-course-list" class="enrolled_courses mTopDiv">
                         	<div class="container">
                         		<div class="enrolled_courses_inner">
@@ -429,14 +475,7 @@ document.body.className += ' jsenabled';
                         	</div>
                         </div>
                         
-                        <!--
-                        	//FrontPage Course List /*Or*/ Enrolled Courses End
-                        -->
-                        
-                        <!--
-                        	//YouTube Videos Container //Start
-                        -->
-                        
+                     
 
 <div id="videos" class="videos-container mTopDiv">
 	<div class="container">
@@ -446,46 +485,46 @@ document.body.className += ' jsenabled';
 	                    <div class="slider-banner-image">
 	                    	<div class="overlay overlay-bg"></div>
 	                        <img src="images/01.jpeg" alt="BigSlide-Image">
-	                        <a class="play-btn cc_video" data-flashy-type="video" href="//www.youtube.com/embed/3ORsUGVNxGs"></a>
+	                        <a class="play-btn cc_video" data-flashy-type="video" ></a>
 	                    </div> 
 	                    <div class="slider-banner-image">
 	                    	<div class="overlay overlay-bg"></div>
 	                        <img src="images/02.jpeg" alt="BigSlide-Image">
-	                        <a class="play-btn cc_video" data-flashy-type="video" href="//www.youtube.com/embed/Io8ZqAOnAsw"></a>
+	                        <a class="play-btn cc_video" data-flashy-type="video" ></a>
 	                    </div> 
 	                    <div class="slider-banner-image">
 	                    	<div class="overlay overlay-bg"></div>
 	                        <img src="images/03.jpg" alt="BigSlide-Image">
-	                        <a class="play-btn cc_video" data-flashy-type="video" href="//www.youtube.com/embed/W3f9iroRZi8"></a>
+	                        <a class="play-btn cc_video" data-flashy-type="video" ></a>
 	                    </div> 
 	                     <div class="slider-banner-image">
 	                        <img src="images/04.jpeg" alt="BigSlide-Image">
-	                        <a class="play-btn cc_video" data-flashy-type="video" href="//www.youtube.com/embed/wURqxr4eKs0"></a>
+	                        <a class="play-btn cc_video" data-flashy-type="video" ></a>
 	                    </div> 
 	                    <div class="slider-banner-image">
 	                    	<div class="overlay overlay-bg"></div>
 	                        <img src="images/05.jpeg" alt="BigSlide-Image">
-	                        <a class="play-btn cc_video" data-flashy-type="video" href="//www.youtube.com/embed/ewjrhmIU-3U"></a>
+	                        <a class="play-btn cc_video" data-flashy-type="video" ></a>
 	                    </div> 
 	                    <div class="slider-banner-image">
 	                    	<div class="overlay overlay-bg"></div>
 	                        <img src="images/06.jpeg" alt="BigSlide-Image">
-	                        <a class="play-btn cc_video" data-flashy-type="video" href="//www.youtube.com/embed/GsptXPRPIjw"></a>
+	                        <a class="play-btn cc_video" data-flashy-type="video" ></a>
 	                    </div> 
 	                     <div class="slider-banner-image">
 	                     	<div class="overlay overlay-bg"></div>
 	                        <img src="images/07.jpeg" alt="BigSlide-Image">
-	                        <a class="play-btn cc_video" data-flashy-type="video" href="//www.youtube.com/embed/zniytn4nNoA"></a>
+	                        <a class="play-btn cc_video" data-flashy-type="video" ></a>
 	                    </div> 
 	                    <div class="slider-banner-image">
 	                    	<div class="overlay overlay-bg"></div>
 	                        <img src="images/08.jpeg" alt="BigSlide-Image">
-	                        <a class="play-btn cc_video" data-flashy-type="video" href="//www.youtube.com/embed/Bnjf7qjUFT4"></a>
+	                        <a class="play-btn cc_video" data-flashy-type="video" ></a>
 	                    </div> 
 	                    <div class="slider-banner-image">
 	                    	<div class="overlay overlay-bg"></div>
 	                        <img src="images/09.jpeg" alt="BigSlide-Image">
-	                        <a class="play-btn cc_video" data-flashy-type="video" href="//www.youtube.com/embed/ScT3hBTT3ps"></a>
+	                        <a class="play-btn cc_video" data-flashy-type="video" ></a>
 	                    </div> 
 	                </div>
             	</div>
@@ -831,20 +870,161 @@ document.body.className += ' jsenabled';
                         
                         <div class="moodle-default-section hidden">
                             <span class="notifications" id="user-notifications"></span>
-                            <div role="main"><span id="maincontent"></span><a class="skip-block skip" href="#skipavailablecourses">Skip available courses</a><div id="frontpage-available-course-list"><h2>Available courses</h2><div class="courses frontpage-course-list-all"><div class="coursebox clearfix odd first" data-courseid="3" data-type="1"><div class="content"><div class="content-wrapper"><div class="course-image"><a href="https://ignite.themecms.com/course/view.php?id=3"><img src="images/09n.jpeg" alt="Conservation of Heritage Sites" /></a><div class="cc_name" data-categoryclass="Architecture"><h4><a class="" alt="Architecture" href="https://ignite.themecms.com/course/index.php?categoryid=1">Architecture</a></h4></div></ul></div><div class="course-wrapper"></ul><div class="sdate-senroll-wrapper"><div class="course-start-date"><h6><i class="cb-calendar-icon"></i>Jun 25, 2022</h6></div><div class="enrolled-students"><h6 class="student-icon"><i class="cb-suser-icon"></i><em>1</em> Student</h6></div></div><div class="courseheading"><h3 class="coursetitle"><a class="" href="https://ignite.themecms.com/course/view.php?id=3">Conservation of Heritage Sites</a></h3></div><div class="summary babab" data-simplebar="init"><div class="no-overflow">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div></div><div class="visitlink"><a href="https://ignite.themecms.com/course/view.php?id=3"><span>Enter Now</span></a></div></div></div></div></div><div class="coursebox clearfix even" data-courseid="2" data-type="1"><div class="content"><div class="content-wrapper"><div class="course-image"><a href="https://ignite.themecms.com/course/view.php?id=2"><img src="images/07n.jpeg" alt="Landscape Architecture" /></a><div class="cc_name" data-categoryclass="Architecture"><h4><a class="" alt="Architecture" href="https://ignite.themecms.com/course/index.php?categoryid=1">Architecture</a></h4></div></ul></div><div class="course-wrapper"></ul><div class="sdate-senroll-wrapper"><div class="course-start-date"><h6><i class="cb-calendar-icon"></i>Jun 25, 2022</h6></div><div class="enrolled-students"><h6 class="student-icon"><i class="cb-suser-icon"></i><em>1</em> Student</h6></div></div><div class="courseheading"><h3 class="coursetitle"><a class="" href="https://ignite.themecms.com/course/view.php?id=2">Landscape Architecture</a></h3></div><div class="summary babab" data-simplebar="init"><div class="no-overflow">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div></div><div class="visitlink"><a href="https://ignite.themecms.com/course/view.php?id=2"><span>Enter Now</span></a></div></div></div></div></div><div class="coursebox clearfix odd" data-courseid="4" data-type="1"><div class="content"><div class="content-wrapper"><div class="course-image"><a href="https://ignite.themecms.com/course/view.php?id=4"><img src="images/08n.jpeg" alt="Introduction to Economics" /></a><div class="cc_name" data-categoryclass="Economics"><h4><a class="" alt="Economics" href="https://ignite.themecms.com/course/index.php?categoryid=2">Economics</a></h4></div></ul></div><div class="course-wrapper"></ul><div class="sdate-senroll-wrapper"><div class="course-start-date"><h6><i class="cb-calendar-icon"></i>Jun 25, 2022</h6></div><div class="enrolled-students"><h6 class="student-icon"><i class="cb-suser-icon"></i><em>1</em> Student</h6></div></div><div class="courseheading"><h3 class="coursetitle"><a class="" href="https://ignite.themecms.com/course/view.php?id=4">Introduction to Economics</a></h3></div><div class="summary babab" data-simplebar="init"><div class="no-overflow">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div></div><div class="visitlink"><a href="https://ignite.themecms.com/course/view.php?id=4"><span>Enter Now</span></a></div></div></div></div></div><div class="coursebox clearfix even last" data-courseid="6" data-type="1"><div class="content"><div class="content-wrapper"><div class="course-image"><a href="https://ignite.themecms.com/course/view.php?id=6"><img src="images/05n.jpeg" alt="Motivating Students to Learn" /></a><div class="cc_name" data-categoryclass="Motivation"><h4><a class="" alt="Motivation" href="https://ignite.themecms.com/course/index.php?categoryid=3">Motivation</a></h4></div></ul></div><div class="course-wrapper"></ul><div class="sdate-senroll-wrapper"><div class="course-start-date"><h6><i class="cb-calendar-icon"></i>Jun 25, 2022</h6></div><div class="enrolled-students"><h6 class="student-icon"><i class="cb-suser-icon"></i><em>1</em> Student</h6></div></div><div class="courseheading"><h3 class="coursetitle"><a class="" href="https://ignite.themecms.com/course/view.php?id=6">Motivating Students to Learn</a></h3></div><div class="summary babab" data-simplebar="init"><div class="no-overflow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</div></div><div class="visitlink"><a href="https://ignite.themecms.com/course/view.php?id=6"><span>Enter Now</span></a></div></div></div></div></div><div class="paging paging-morelink"><a href="https://ignite.themecms.com/course/index.php">All courses</a></div></div></div><span class="skip-block-to" id="skipavailablecourses"></span><br /><a class="skip-block skip" href="#skipcategories">Skip course categories</a><div id="frontpage-category-names"><h2>Course categories</h2><div class="categories__container"><div class="categories__wrapper row">
+                            <div role="main"><span id="maincontent"></span>
+                                <a class="skip-block skip" href="#skipavailablecourses">Skip available courses</a><div id="frontpage-available-course-list"><h2>Available courses</h2>
+                                    <div class="courses frontpage-course-list-all"><div class="coursebox clearfix odd first" data-courseid="3" data-type="1">
+                                        <div class="content"><div class="content-wrapper"><div class="course-image">
+                                            <a>
+                                                <img src="images/09n.jpeg" alt="Conservation of Heritage Sites" /></a>
+                                                <div class="cc_name" data-categoryclass="Team work"><h4><a class="" alt="Team work" href="">Team work</a></h4>
+                                                </div></ul></div><div class="course-wrapper"></ul><div class="sdate-senroll-wrapper">
+                                                  
+                                                
+                                                </div><div class="courseheading">
+                                                    
+                                                </div>
+                                                <div class="courseheading">
+                                                    <h3 class="coursetitle"><a class="" href="#">Our Team Work </a></h3>
+                                                    </div
+                                                    >
+                                                    <div class="summary babab" data-simplebar="init">
+                                                    <div class="no-overflow">We work together across boundaries to meat the need of our subscribers/member and to help the company</div></div><div class="visitlink"><a><span>Enter Now</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                        <div class="coursebox clearfix even" data-courseid="2" data-type="1"><div class="content"><div class="content-wrapper"><div class="course-image"><a href=""><img src="images/07n.jpeg" alt=" Respect" /></a><div class="cc_name" data-categoryclass="Respect"><h4><a class="" alt="Respect" href="">Respect</a>
+                                        </h4>
+                                        </div>
+                                    </ul>
+                                    </div
+                                    ><div class="course-wrapper">
+                                        
+                                    <div class="courseheading">
+                                        <h3 class="coursetitle"><a class="" href="">Respect for people</a></h3>
+                                        </div
+                                        ><div class="summary babab" data-simplebar="init"><div class="no-overflow">We value people, encourange their development and reward their performance</div></div><div class="visitlink"><a ><span>Enter Now</span></a></div></div></div></div></div><div class="coursebox clearfix odd" data-courseid="4" data-type="1"><div class="content"><div class="content-wrapper"><div class="course-image"><a "><img src="images/08n.jpeg" alt="Introduction to Win" /></a><div class="cc_name" data-categoryclass="Win"><h4><a class="" alt="Win" >Win</a></h4></div></ul></div><div class="course-wrapper"></ul>
+                                       
+                                                <div class="courseheading">
+                                                    <h3 class="coursetitle"><a class="" >A will to win</a></h3>
+                                                </div>
+                                                    <div class="summary babab" data-simplebar="init"><div class="no-overflow">We established a strong will to win in the e-market place and in every aspect of our bussiness.</div></div><div class="visitlink"><a ><span>Enter Now</span></a></div></div></div></div></div><div class="coursebox clearfix even last" data-courseid="6" data-type="1"><div class="content"><div class="content-wrapper"><div class="course-image"><a ><img src="images/05n.jpeg" alt="Accountability" /></a><div class="cc_name" data-categoryclass="Accountability"><h4><a class="" alt="Motivation" >Accountability</a></h4></div></ul></div><div class="course-wrapper"></ul>
+                                                       <div class="courseheading"><h3 class="coursetitle"><a class="" >Personal Accountability</a></h3></div>
+                                                        <div class="summary babab" data-simplebar="init"
+                                                        ><div class="no-overflow">We are Personally accountable first to God and to our subscribers client for delivering our promises.</div>
+                                                    </div><div class="visitlink"><a ><span>Enter Now</span></a>
+                                                    </div>
+                                                </div></div></div></div>
+                                                        <div class="paging paging-morelink"><a >All courses</a></div>
+                                                    </div></div><span class="skip-block-to" id="skipavailablecourses"></span><br /><a class="skip-block skip" href="#skipcategories">Skip course categories</a><div id="frontpage-category-names"><h2>Our Vision</h2><div class="categories__container"><div class="categories__wrapper row">
+        
             <div class="col-lg-3 col-md-6 col-sm-12 cat_box">
                 <div class="ignite_cc__wrapper">
                     <div class="ignite_cc__inner"><div class="category_image__section">
-                            <img class="cate_img__tag" src="images/09.jpeg" alt="Architecture">
+                            <img class="cate_img__tag" src="images/08.jpeg" alt="Vison">
                             <div class="overlay overlay-bg">
                                 <div class="category_image__info">
-                                    <h3>Architecture</h3>
-                                    <a class="category_course__link" href="https://ignite.themecms.com/course/index.php?categoryid=1">View all courses</a>
+                                    <h3>Personal Accountability</h3>
+                                    <a class="category_course__link" >View all courses</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="ignite_cc__contents"><span class="date__container"><i class="cb-calendar-icon"></i>Modified 24 June 2022</span>
-                            <h3><a href="https://ignite.themecms.com/course/index.php?categoryid=1">Architecture</a></h3><div class="category_summary__wrapper" data-simplebar="init"><div class="no-overflow">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div></div></div>
+                        <div class="ignite_cc__contents">
+                            <h3><a href="">Accountability</a></h3><div class="category_summary__wrapper" data-simplebar="init"><div class="no-overflow">We are Personally accountable first to God and to our subscribers client for delivering our promises.</div></div></div>
+                        <div class="ignite_cc__count">
+                            <div class="ignite_cc_inner__count">
+                                <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                                <span>1 Courses</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 cat_box">
+                <div class="ignite_cc__wrapper">
+                    <div class="ignite_cc__inner"><div class="category_image__section">
+                            <img class="cate_img__tag" src="images/05.jpeg" alt="Commitment">
+                            <div class="overlay overlay-bg">
+                                <div class="category_image__info">
+                                    <h3>Commitment</h3>
+                                    <a class="category_course__link">View all courses</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ignite_cc__contents">
+                            <h3><a >Commitment</a></h3><div class="category_summary__wrapper" data-simplebar="init"><div class="no-overflow">We develope relationship that makes positive difference in the lives of others.</div></div></div>
+                        <div class="ignite_cc__count">
+                            <div class="ignite_cc_inner__count">
+                                <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                                <span>2 Courses</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 cat_box">
+                <div class="ignite_cc__wrapper">
+                    <div class="ignite_cc__inner"><div class="category_image__section">
+                            <img class="cate_img__tag" src="images/11.jpeg" alt="Quality">
+                            <div class="overlay overlay-bg">
+                                <div class="category_image__info">
+                                    <h3>Quality</h3>
+                                    <a class="category_course__link" >View all courses</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ignite_cc__contents">
+                            <h3><a >Quality</a></h3><div class="category_summary__wrapper" data-simplebar="init"><div class="no-overflow">We provide outstanding platform that deliver premium value to our subscribers</div></div></div>
+                        <div class="ignite_cc__count">
+                            <div class="ignite_cc_inner__count">
+                                <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                                <span>2 Courses</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 cat_box">
+                <div class="ignite_cc__wrapper">
+                    <div class="ignite_cc__inner"><div class="category_image__section">
+                            <img class="cate_img__tag" src="images/09.jpeg" alt="Integrity">
+                            <div class="overlay overlay-bg">
+                                <div class="category_image__info">
+                                    <h3>Integrity</h3>
+                                    <a class="category_course__link" >View all courses</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ignite_cc__contents">
+                            <h3><a >Integrity</a></h3><div class="category_summary__wrapper" data-simplebar="init"><div class="no-overflow">If we upheld the highest standard of Integrity 
+                                Honesty in all our actions.</div></div></div>
+                        <div class="ignite_cc__count">
+                            <div class="ignite_cc_inner__count">
+                                <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                                <span>More about voucher asset</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+        </div></div></div><span class="skip-block-to" id="skipcategories"></span><br /><a class="skip-block skip" href="#skipcourses">Skip courses</a><div id="frontpage-category-combo"><h2>Courses</h2><div class="categories__container"><div class="categories__wrapper row">
+            <div class="col-lg-3 col-md-6 col-sm-12 cat_box">
+                <div class="ignite_cc__wrapper">
+                    <div class="ignite_cc__inner"><div class="category_image__section">
+                            <img class="cate_img__tag" src="images/09.jpeg" alt="Integrity">
+                            <div class="overlay overlay-bg">
+                                <div class="category_image__info">
+                                    <h3>Integrity</h3>
+                                    <a class="category_course__link" >View all courses</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ignite_cc__contents">
+                            <h3><a >Integrity</a></h3><div class="category_summary__wrapper" data-simplebar="init"><div class="no-overflow">If we upheld the highest standard of Integrity 
+                                 Honesty in all our actions.</div></div></div>
                         <div class="ignite_cc__count">
                             <div class="ignite_cc_inner__count">
                                 <i class="fa fa-folder-open-o" aria-hidden="true"></i>
@@ -879,104 +1059,16 @@ document.body.className += ' jsenabled';
             <div class="col-lg-3 col-md-6 col-sm-12 cat_box">
                 <div class="ignite_cc__wrapper">
                     <div class="ignite_cc__inner"><div class="category_image__section">
-                            <img class="cate_img__tag" src="images/05.jpeg" alt="Motivation">
+                            <img class="cate_img__tag" src="images/05.jpg" alt="Accountability">
                             <div class="overlay overlay-bg">
                                 <div class="category_image__info">
-                                    <h3>Motivation</h3>
+                                    <h3>Accountability</h3>
                                     <a class="category_course__link" href="https://ignite.themecms.com/course/index.php?categoryid=3">View all courses</a>
                                 </div>
                             </div>
                         </div>
                         <div class="ignite_cc__contents"><span class="date__container"><i class="cb-calendar-icon"></i>Modified 24 June 2022</span>
-                            <h3><a href="https://ignite.themecms.com/course/index.php?categoryid=3">Motivation</a></h3><div class="category_summary__wrapper" data-simplebar="init"><div class="no-overflow">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div></div></div>
-                        <div class="ignite_cc__count">
-                            <div class="ignite_cc_inner__count">
-                                <i class="fa fa-folder-open-o" aria-hidden="true"></i>
-                                <span>2 Courses</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 cat_box">
-                <div class="ignite_cc__wrapper">
-                    <div class="ignite_cc__inner"><div class="category_image__section">
-                            <img class="cate_img__tag" src="images/11.jpeg" alt="Entrepreneurship">
-                            <div class="overlay overlay-bg">
-                                <div class="category_image__info">
-                                    <h3>Entrepreneurship</h3>
-                                    <a class="category_course__link" href="https://ignite.themecms.com/course/index.php?categoryid=4">View all courses</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ignite_cc__contents"><span class="date__container"><i class="cb-calendar-icon"></i>Modified 24 June 2022</span>
-                            <h3><a href="https://ignite.themecms.com/course/index.php?categoryid=4">Entrepreneurship</a></h3><div class="category_summary__wrapper" data-simplebar="init"><div class="no-overflow">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div></div></div>
-                        <div class="ignite_cc__count">
-                            <div class="ignite_cc_inner__count">
-                                <i class="fa fa-folder-open-o" aria-hidden="true"></i>
-                                <span>2 Courses</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div></div></div></div><span class="skip-block-to" id="skipcategories"></span><br /><a class="skip-block skip" href="#skipcourses">Skip courses</a><div id="frontpage-category-combo"><h2>Courses</h2><div class="categories__container"><div class="categories__wrapper row">
-            <div class="col-lg-3 col-md-6 col-sm-12 cat_box">
-                <div class="ignite_cc__wrapper">
-                    <div class="ignite_cc__inner"><div class="category_image__section">
-                            <img class="cate_img__tag" src="images/09.jpeg" alt="Architecture">
-                            <div class="overlay overlay-bg">
-                                <div class="category_image__info">
-                                    <h3>Architecture</h3>
-                                    <a class="category_course__link" href="https://ignite.themecms.com/course/index.php?categoryid=1">View all courses</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ignite_cc__contents"><span class="date__container"><i class="cb-calendar-icon"></i>Modified 24 June 2022</span>
-                            <h3><a href="https://ignite.themecms.com/course/index.php?categoryid=1">Architecture</a></h3><div class="category_summary__wrapper" data-simplebar="init"><div class="no-overflow">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div></div></div>
-                        <div class="ignite_cc__count">
-                            <div class="ignite_cc_inner__count">
-                                <i class="fa fa-folder-open-o" aria-hidden="true"></i>
-                                <span>2 Courses</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 cat_box">
-                <div class="ignite_cc__wrapper">
-                    <div class="ignite_cc__inner"><div class="category_image__section">
-                            <img class="cate_img__tag" src="images/08.jpeg" alt="Economics">
-                            <div class="overlay overlay-bg">
-                                <div class="category_image__info">
-                                    <h3>Economics</h3>
-                                    <a class="category_course__link" href="https://ignite.themecms.com/course/index.php?categoryid=2">View all courses</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ignite_cc__contents"><span class="date__container"><i class="cb-calendar-icon"></i>Modified 24 June 2022</span>
-                            <h3><a href="https://ignite.themecms.com/course/index.php?categoryid=2">Economics</a></h3><div class="category_summary__wrapper" data-simplebar="init"><div class="no-overflow">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div></div></div>
-                        <div class="ignite_cc__count">
-                            <div class="ignite_cc_inner__count">
-                                <i class="fa fa-folder-open-o" aria-hidden="true"></i>
-                                <span>1 Courses</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 cat_box">
-                <div class="ignite_cc__wrapper">
-                    <div class="ignite_cc__inner"><div class="category_image__section">
-                            <img class="cate_img__tag" src="images/05.jpg" alt="Motivation">
-                            <div class="overlay overlay-bg">
-                                <div class="category_image__info">
-                                    <h3>Motivation</h3>
-                                    <a class="category_course__link" href="https://ignite.themecms.com/course/index.php?categoryid=3">View all courses</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ignite_cc__contents"><span class="date__container"><i class="cb-calendar-icon"></i>Modified 24 June 2022</span>
-                            <h3><a href="https://ignite.themecms.com/course/index.php?categoryid=3">Motivation</a></h3><div class="category_summary__wrapper" data-simplebar="init"><div class="no-overflow">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div></div></div>
+                            <h3><a href="https://ignite.themecms.com/course/index.php?categoryid=3">Accountability</a></h3><div class="category_summary__wrapper" data-simplebar="init"><div class="no-overflow">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div></div></div>
                         <div class="ignite_cc__count">
                             <div class="ignite_cc_inner__count">
                                 <i class="fa fa-folder-open-o" aria-hidden="true"></i>
@@ -1367,17 +1459,7 @@ and demoralized by the charms of pleasure of the moment.
                                             <li><a href="https://ignite.themecms.com/" title="">News</a></li>
                                             <li><a href="https://ignite.themecms.com/" title="">Jobs</a></li>
                                             <li><a href="https://ignite.themecms.com/" title="">Research</a></li>
-                                            <li><a href="#" title="Language">English ‎(en)‎</a></li>
-                                        <li>
-                                            <ul class="list-unstyled ml-3">
-                                                                <li><a href="https://ignite.themecms.com/?lang=de" title="Deutsch ‎(de)‎">Deutsch ‎(de)‎</a></li>
-                                                                <li><a href="https://ignite.themecms.com/?lang=en" title="English ‎(en)‎">English ‎(en)‎</a></li>
-                                                                <li><a href="https://ignite.themecms.com/?lang=es" title="Español - Internacional ‎(es)‎">Español - Internacional ‎(es)‎</a></li>
-                                                                <li><a href="https://ignite.themecms.com/?lang=la" title="Latin ‎(la)‎">Latin ‎(la)‎</a></li>
-                                                                <li><a href="https://ignite.themecms.com/?lang=ro" title="Română ‎(ro)‎">Română ‎(ro)‎</a></li>
-                                                                <li><a href="https://ignite.themecms.com/?lang=ur" title="اردو ‎(ur)‎">اردو ‎(ur)‎</a></li>
-                                            </ul>
-                                        </li>
+                                           
                         </ul>
                 </nav>
             </div>
@@ -1499,8 +1581,8 @@ M.util.help_popups.setup(Y);
     <!-- End Back To Top -->
 </div>
 <script type="text/javascript">
-	var cat_tagline = "Popular Online Categories";
-	var cat_heading = "Course Categories";
+	var cat_tagline = "Categories Toward Your Goal";
+	var cat_heading = "Our Vision";
 	var view_all_cate_btn = "View all categories";
 	var preload_duration_payload = "2000"
 </script>

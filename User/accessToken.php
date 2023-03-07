@@ -46,10 +46,8 @@ if ($_GET['ok']==isset($_SESSION['ok']) && isset($_SESSION['email'])) {
         $forum2=$my['trade_forum_2'];
         $forum3=$my['trade_forum_3'];
 
-        $bankDeteails =$conn->query("SELECT * FROM `bankdetails`");
-     
+        $bankDeteails =$conn->query("SELECT * FROM `bankdetails`");    
         $fetchAll = $bankDeteails->fetch_assoc();
-
         $accountnumber = $fetchAll['accountnumber'];
         $accountname = $fetchAll['accountname'];
         $bankname = $fetchAll['bankname'];

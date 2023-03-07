@@ -11,16 +11,12 @@
                         <br>
                         <span class="f12 font-w-none">Total Sales a day</span>
                     </span>
-                    <br> <br>
-                  
+                    <br> <br>                
                     <span class="black f25">
                         $1,000
                     </span>
-
                 </div>
-
 <style>
-
 .circle-wrap {
 margin: 100px auto;
 width: 100px;

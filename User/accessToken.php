@@ -55,7 +55,7 @@ if ($_GET['ok']==isset($_SESSION['ok']) && isset($_SESSION['email'])) {
             echo '<script>window.location.href="../register/"</script>';
     }
 } else {
-    die('Error 404 Handling');
+    echo '<script>window.location.href="../register/"</script>';
 }
 
 

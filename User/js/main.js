@@ -1,5 +1,5 @@
 $(()=>{
-    
+let change =0;
 const obj = [
     {
     id:"300k",
@@ -35,29 +35,50 @@ const obj = [
             `)
         })
         $("#l1").on("click",function () {
-            hideAll()               
+            hideAll()     
+            showIndex()          
         })
         $("#l2").on("click",function () {
             hideAll()
-            $("#voucher").toggle(50)           
+            $("#voucher").toggle(50)   
+            showIndex()        
         })
         $("#l3").on("click",function () {   
             hideAll()  
-            $("#payment").toggle(50)           
+            $("#payment").toggle(50)  
+            showIndex()         
         })
         $("#l4").on("click",function () {
             hideAll()
-            $("#voucherId").toggle(50)           
+            $("#voucherId").toggle(50)   
+            showIndex()        
         })
         $("#l5").on("click",function () {
             hideAll()
-            $("#initial").toggle(50)           
+            $("#initial").toggle(50)  
+            showIndex()         
         })
+        // show Profile
+        $("#l6").on("click",()=>{
+            hideAll()
+            $("#profile").show()
+            showIndex()
+        })
+
         function hideAll() {
             $("#voucher").fadeOut("fast")
             $("#payment").fadeOut("fast")
             $("#voucherId").fadeOut("fast")
-            $("#initial").fadeOut("fast")           
+            $("#initial").fadeOut("fast")     
+            $("#profile").fadeOut("fast") 
+            $(".voucher_market").css({"z-index":"100"})          
+        }
+        function showIndex() {
+            if($("aside").css('position')== 'fixed') {
+                reacts();
+                change=0;
+            }
+       
         }
 
         let ard=$(".advert_rotation");
@@ -122,7 +143,7 @@ subscribe.on("submit",function(e){
         processData:false,
         contentType:false,
         beforeSend:()=>{
-            swal("Alert","We are proccessing your request","success");
+            
         },
         success:(data)=>{
             console.log(data)
@@ -131,6 +152,31 @@ subscribe.on("submit",function(e){
     })
 })
 
+
+//** Mobile Responsiveness *///
+
+$("#showSidemedia").on("click",()=>{
+    change++
+    $("#showSidemedia i").removeClass("fa-bars")
+    $("#showSidemedia i").addClass("fa-times")
+    $("aside").css({
+        "left":"0px",
+        "z-index": "101"
+    })
+    if(change==2){
+        reacts()
+        change=0;
+    }
+})
+
+function reacts() {
+    $("#showSidemedia i").addClass("fa-bars")
+        $("#showSidemedia i").removeClass("fa-times")
+        $("aside").css({
+            "left":"-100%"
+        })
+       
+}
 })
 
 let xx=0;

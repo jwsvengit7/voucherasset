@@ -536,9 +536,17 @@ $("#rows").append(`
                         <label>
                             <h3>&nbsp;&nbsp;&nbsp;Initiate a Trade</h3>
                         </label>
+
+                    <div style="width:100%;height:100px;background:red">
+                     </div>
                 </div>
         </div>
     </div>
+
+</div>
+
+<div id="profile" class="voucher_market fullcolor">
+    <h1>Profile</h1>
 
 </div>
 

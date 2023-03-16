@@ -115,7 +115,9 @@ if (isset($_SESSION['ok'])==1) {
                             <a class="tst active" href="../index.html">Home</a>
                         </li>
                         <!-- custom_menu -->
-                        <ul class="navigation-wrapper"><li class="nav-dropdown-menu"><a href="?courses" class=" tst" role="menuitem" data-toggle="dropdown-item">Voucher</a><li><a href="" class="dropdown-item tst">News</a></li><li><a href="" class="dropdown-item tst">Trade</a></li><li><a href="" class="dropdown-item tst">Register</a></li>
+                        <ul class="navigation-wrapper">
+                            <li class="nav-dropdown-menu"><a href="?courses" class=" tst" role="menuitem" data-toggle="dropdown-item">Voucher</a>
+                            <li><a href="" class="dropdown-item tst">Trade</a></li><li><a href="" class="dropdown-item tst">Register</a></li>
                     </ul>
                     
                     </ul>
@@ -208,7 +210,7 @@ include "csslogin.php";
         </div>
 
     
-<?php include 'footer.php';
+<?php //include 'footer.php';
 ?>
     <!-- End Back To Top -->
 </div>

@@ -16,19 +16,12 @@
                     </style>
                  
                     <div class="bars display align-items justify-content cursor " id="showSide">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-                            <line x1="3" y1="12" x2="21" y2="12"></line>
-                            <line x1="3" y1="6" x2="21" y2="6"></line>
-                            <line x1="3" y1="18" x2="21" y2="18"></line>
-                        </svg>									
+                        
+                        <i class="fa fa-bars f25"></i>								
                     </div>
 
                     <div class="bars display align-items justify-content cursor " id="showSidemedia">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-                            <line x1="3" y1="12" x2="21" y2="12"></line>
-                            <line x1="3" y1="6" x2="21" y2="6"></line>
-                            <line x1="3" y1="18" x2="21" y2="18"></line>
-                        </svg>									
+                    <i class="fa fa-bars f25"></i>										
                     </div>
                         <div class="inp cursor iconhide">
                             <input type="" class="inpcursor">
@@ -45,7 +38,7 @@
                         <i class="fa fa-bell darkblue f25"></i>
                         
                     </li>
-                    <li id="c">
+                    <li id="l6" class="openProfile">
                        
                        <div class="perfectcircle">
                            <img src="profile/<?php echo $profile;?>" class="hunderdpercent">

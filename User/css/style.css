@@ -305,7 +305,7 @@ aside ul{
     position: fixed;
     top: 100px;
     left: 17%;
-    z-index: 1000;
+    z-index: 100;
     padding: 10px;  
  
 }
@@ -355,6 +355,7 @@ aside ul{
 #payment,
 #voucherId,
 #initial,
+#profile,
 #voucher{
     display: none;
 }
@@ -461,8 +462,22 @@ span.price {
 }
 
 @media(max-width:600px){
+    .bars{
+        width:30px;
+        height: 30px;
+    }
+    #showSidemedia{
+        display: flex;
+    }
+    #showSide{
+        display: none;
+    }
     .container input[type=text],.option-trade {
-        width: 65%;
+        width: 90%;
+       
+      }
+      .option-trade {
+        width: 100%;
        
       }
       .btn{
@@ -500,11 +515,13 @@ span.price {
     aside{
         position: fixed;
         left:-100%;
-        width:80%
+        width:85%;
+        transition-duration: 1s;
     }
     .sidebar{
         position: relative;
         width: 100%;
+        top: 0px;
     }
     .app-side{
         width:100%;

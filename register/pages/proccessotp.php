@@ -22,7 +22,7 @@ if ($otp===$_SESSION['otp']) {
 	 else{
 	 	$time=time();
 	 	// insert new record
-			$insertNewRecord=$conn->query("INSERT INTO signup(email,username,password,`date`)VALUES('$email','$username','$password','$time')");
+			$insertNewRecord=$conn->query("INSERT INTO signup(email,username,password,`dob`)VALUES('$email','$username','$password','$time')");
 	 		if($insertNewRecord){
 				$insertLastId=$conn->insert_id;
 				$generateAccessToken = substr(md5(uniqid(true)),0,18).$insertLastId;

@@ -537,8 +537,28 @@ $("#rows").append(`
                             <h3>&nbsp;&nbsp;&nbsp;Initiate a Trade</h3>
                         </label>
 
-                    <div style="width:100%;height:100px;background:red">
-                     </div>
+                    <div class="display justify-space-between" style="width:100%;height:100px;padding:10px">
+                    <form>
+
+                    <label>Select Your Trade Forum</label>
+                    <select style="width:300px;height:40px;color:#003366">
+                    <option>200 Trade Forum</option>
+                     </select>
+                     </form>
+
+
+                     <div style="width:40%;height:100px;background:red">
+
+                    </div>
+
+                     <div>
+
+                    
+
+
+
+
+                    </div>
                 </div>
         </div>
     </div>
